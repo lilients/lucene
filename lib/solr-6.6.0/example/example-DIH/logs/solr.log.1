@@ -1,0 +1,185 @@
+INFO  - 2017-09-19 15:43:10.981; [   ] org.eclipse.jetty.util.log.Log; Logging initialized @1085ms
+INFO  - 2017-09-19 15:43:11.689; [   ] org.eclipse.jetty.server.Server; jetty-9.3.14.v20161028
+INFO  - 2017-09-19 15:43:11.826; [   ] org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor [file:///opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/contexts/] at interval 0
+INFO  - 2017-09-19 15:43:12.681; [   ] org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2017-09-19 15:43:13.122; [   ] org.apache.solr.servlet.SolrDispatchFilter;  ___      _       Welcome to Apache Solr™ version 6.6.0
+INFO  - 2017-09-19 15:43:13.124; [   ] org.apache.solr.servlet.SolrDispatchFilter; / __| ___| |_ _   Starting in standalone mode on port 8983
+INFO  - 2017-09-19 15:43:13.124; [   ] org.apache.solr.servlet.SolrDispatchFilter; \__ \/ _ \ | '_|  Install dir: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0
+INFO  - 2017-09-19 15:43:13.171; [   ] org.apache.solr.servlet.SolrDispatchFilter; |___/\___/_|_|    Start time: 2017-09-19T15:43:13.125Z
+INFO  - 2017-09-19 15:43:13.534; [   ] org.apache.solr.core.SolrResourceLoader; Using system property solr.solr.home: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr
+INFO  - 2017-09-19 15:43:13.627; [   ] org.apache.solr.core.SolrXmlConfig; Loading container configuration from /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/solr.xml
+INFO  - 2017-09-19 15:43:19.100; [   ] org.apache.solr.update.UpdateShardHandler; Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+INFO  - 2017-09-19 15:43:20.675; [   ] org.apache.solr.core.CorePropertiesLocator; Found 5 core definitions underneath /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr
+INFO  - 2017-09-19 15:43:20.682; [   ] org.apache.solr.core.CorePropertiesLocator; Cores are: [solr, db, mail, tika, atom]
+INFO  - 2017-09-19 15:43:21.205; [   x:db] org.apache.solr.core.SolrResourceLoader; [null] Added 2 libs to classloader, from paths: [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/db/lib]
+INFO  - 2017-09-19 15:43:21.440; [   ] org.eclipse.jetty.server.handler.ContextHandler; Started o.e.j.w.WebAppContext@7a1ebcd8{/solr,file:///opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr-webapp/webapp/,AVAILABLE}{/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr-webapp/webapp}
+WARN  - 2017-09-19 15:43:21.507; [   x:mail] org.apache.solr.core.SolrConfig; Couldn't add files from /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/dataimporthandler/lib filtered by .*\.jar to classpath: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/dataimporthandler/lib
+INFO  - 2017-09-19 15:43:21.539; [   x:solr] org.apache.solr.core.SolrResourceLoader; [solr] Added 46 libs to classloader, from paths: [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/extraction/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/langid/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/velocity/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/dist]
+INFO  - 2017-09-19 15:43:21.541; [   x:mail] org.apache.solr.core.SolrResourceLoader; [mail] Added 49 libs to classloader, from paths: [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/dataimporthandler-extras/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/extraction/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/langid/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/velocity/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/dist]
+INFO  - 2017-09-19 15:43:21.767; [   ] org.eclipse.jetty.server.AbstractConnector; Started ServerConnector@72cc7e6f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+INFO  - 2017-09-19 15:43:21.772; [   ] org.eclipse.jetty.server.Server; Started @11878ms
+INFO  - 2017-09-19 15:43:23.022; [   x:db] org.apache.solr.core.SolrResourceLoader; [db] Added 46 libs to classloader, from paths: [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/extraction/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/langid/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/velocity/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/dist]
+INFO  - 2017-09-19 15:43:23.784; [   x:db] org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2017-09-19 15:43:23.811; [   x:solr] org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2017-09-19 15:43:23.932; [   x:mail] org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2017-09-19 15:43:23.938; [   x:db] org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 6.6.0
+INFO  - 2017-09-19 15:43:23.955; [   x:solr] org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 6.6.0
+INFO  - 2017-09-19 15:43:23.959; [   x:mail] org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 6.6.0
+INFO  - 2017-09-19 15:43:24.244; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=450
+INFO  - 2017-09-19 15:43:24.696; [   x:solr] org.apache.solr.schema.IndexSchema; [solr] Schema name=example-DIH-solr
+INFO  - 2017-09-19 15:43:25.676; [   x:db] org.apache.solr.schema.IndexSchema; [db] Schema name=example-DIH-db
+INFO  - 2017-09-19 15:43:25.690; [   x:mail] org.apache.solr.schema.IndexSchema; [mail] Schema name=example-DIH-mail
+WARN  - 2017-09-19 15:43:27.070; [   x:solr] org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+WARN  - 2017-09-19 15:43:27.074; [   x:db] org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+INFO  - 2017-09-19 15:43:28.861; [   x:solr] org.apache.solr.schema.IndexSchema; Loaded schema example-DIH-solr/1.6 with uniqueid field id
+INFO  - 2017-09-19 15:43:28.865; [   x:db] org.apache.solr.schema.IndexSchema; Loaded schema example-DIH-db/1.6 with uniqueid field id
+INFO  - 2017-09-19 15:43:28.869; [   x:mail] org.apache.solr.schema.IndexSchema; Loaded schema example-DIH-mail/1.6 with uniqueid field messageId
+INFO  - 2017-09-19 15:43:28.903; [   x:solr] org.apache.solr.core.CoreContainer; Creating SolrCore 'solr' using configuration from instancedir /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/solr, trusted=true
+INFO  - 2017-09-19 15:43:28.971; [   x:db] org.apache.solr.core.CoreContainer; Creating SolrCore 'db' using configuration from instancedir /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/db, trusted=true
+INFO  - 2017-09-19 15:43:28.967; [   x:mail] org.apache.solr.core.CoreContainer; Creating SolrCore 'mail' using configuration from instancedir /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/mail, trusted=true
+INFO  - 2017-09-19 15:43:28.979; [   x:solr] org.apache.solr.core.SolrCore; solr.RecoveryStrategy.Builder
+INFO  - 2017-09-19 15:43:28.994; [   x:mail] org.apache.solr.core.SolrCore; solr.RecoveryStrategy.Builder
+INFO  - 2017-09-19 15:43:28.993; [   x:db] org.apache.solr.core.SolrCore; solr.RecoveryStrategy.Builder
+INFO  - 2017-09-19 15:43:29.008; [   x:solr] org.apache.solr.core.SolrCore; [[solr] ] Opening new SolrCore at [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/solr], dataDir=[/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/solr/data/]
+INFO  - 2017-09-19 15:43:29.009; [   x:db] org.apache.solr.core.SolrCore; [[db] ] Opening new SolrCore at [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/db], dataDir=[/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/db/data/]
+INFO  - 2017-09-19 15:43:29.009; [   x:mail] org.apache.solr.core.SolrCore; [[mail] ] Opening new SolrCore at [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/mail], dataDir=[/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/mail/data/]
+INFO  - 2017-09-19 15:43:29.145; [   x:mail] org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2017-09-19 15:43:29.148; [   x:solr] org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2017-09-19 15:43:29.145; [   x:db] org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2017-09-19 15:43:30.096; [   x:mail] org.apache.solr.update.UpdateHandler; Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+INFO  - 2017-09-19 15:43:30.096; [   x:mail] org.apache.solr.update.UpdateLog; Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+INFO  - 2017-09-19 15:43:30.101; [   x:solr] org.apache.solr.update.UpdateHandler; Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+INFO  - 2017-09-19 15:43:30.104; [   x:solr] org.apache.solr.update.UpdateLog; Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+INFO  - 2017-09-19 15:43:30.107; [   x:db] org.apache.solr.update.UpdateHandler; Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+INFO  - 2017-09-19 15:43:30.107; [   x:db] org.apache.solr.update.UpdateLog; Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+INFO  - 2017-09-19 15:43:30.108; [   x:solr] org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2017-09-19 15:43:30.108; [   x:solr] org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2017-09-19 15:43:30.109; [   x:mail] org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2017-09-19 15:43:30.115; [   x:mail] org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2017-09-19 15:43:30.188; [   x:db] org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2017-09-19 15:43:30.188; [   x:db] org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2017-09-19 15:43:30.379; [   x:solr] org.apache.solr.search.SolrIndexSearcher; Opening [Searcher@1dfc6d89[solr] main]
+INFO  - 2017-09-19 15:43:30.379; [   x:mail] org.apache.solr.search.SolrIndexSearcher; Opening [Searcher@4303ecab[mail] main]
+INFO  - 2017-09-19 15:43:30.485; [   x:solr] org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/solr/conf
+INFO  - 2017-09-19 15:43:30.485; [   x:mail] org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/mail/conf
+INFO  - 2017-09-19 15:43:30.633; [   x:mail] org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2017-09-19 15:43:30.633; [   x:solr] org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2017-09-19 15:43:30.667; [   x:solr] org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2017-09-19 15:43:30.669; [   x:mail] org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2017-09-19 15:43:30.678; [   x:solr] org.apache.solr.handler.component.SuggestComponent; Initializing SuggestComponent
+INFO  - 2017-09-19 15:43:30.679; [   x:mail] org.apache.solr.handler.component.SuggestComponent; Initializing SuggestComponent
+INFO  - 2017-09-19 15:43:30.792; [   x:mail] org.apache.solr.spelling.suggest.SolrSuggester; init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+INFO  - 2017-09-19 15:43:30.793; [   x:db] org.apache.solr.search.SolrIndexSearcher; Opening [Searcher@1904b652[db] main]
+INFO  - 2017-09-19 15:43:30.794; [   x:db] org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/db/conf
+INFO  - 2017-09-19 15:43:30.794; [   x:db] org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2017-09-19 15:43:30.795; [   x:db] org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2017-09-19 15:43:30.795; [   x:db] org.apache.solr.handler.component.SuggestComponent; Initializing SuggestComponent
+INFO  - 2017-09-19 15:43:30.795; [   x:db] org.apache.solr.spelling.suggest.SolrSuggester; init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+INFO  - 2017-09-19 15:43:30.799; [   x:solr] org.apache.solr.spelling.suggest.SolrSuggester; init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+INFO  - 2017-09-19 15:43:30.808; [   x:mail] org.apache.solr.spelling.suggest.SolrSuggester; Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+INFO  - 2017-09-19 15:43:30.809; [   x:mail] org.apache.solr.handler.component.SuggestComponent; Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@15ac3536, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+INFO  - 2017-09-19 15:43:30.810; [   x:mail] org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/mail/conf/elevate.xml
+INFO  - 2017-09-19 15:43:30.809; [   x:db] org.apache.solr.spelling.suggest.SolrSuggester; Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+INFO  - 2017-09-19 15:43:30.811; [   x:db] org.apache.solr.handler.component.SuggestComponent; Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@683ec1f6, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+INFO  - 2017-09-19 15:43:30.811; [   x:db] org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/db/conf/elevate.xml
+INFO  - 2017-09-19 15:43:30.813; [   x:solr] org.apache.solr.spelling.suggest.SolrSuggester; Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+INFO  - 2017-09-19 15:43:30.813; [   x:solr] org.apache.solr.handler.component.SuggestComponent; Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@2f7ebdd9, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+INFO  - 2017-09-19 15:43:30.813; [   x:solr] org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/solr/conf/elevate.xml
+INFO  - 2017-09-19 15:43:30.840; [   x:mail] org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2017-09-19 15:43:30.865; [   x:db] org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2017-09-19 15:43:30.863; [   x:solr] org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2017-09-19 15:43:31.029; [   x:solr] org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@1dfc6d89[solr] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+INFO  - 2017-09-19 15:43:31.031; [   x:solr] org.apache.solr.update.UpdateLog; Could not find max version in index or recent updates, using new clock 1578983291387641856
+INFO  - 2017-09-19 15:43:31.036; [   x:mail] org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@4303ecab[mail] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+INFO  - 2017-09-19 15:43:31.038; [   x:db] org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@1904b652[db] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.6.0):C16)))}
+INFO  - 2017-09-19 15:43:31.044; [   x:mail] org.apache.solr.update.UpdateLog; Could not find max version in index or recent updates, using new clock 1578983291401273344
+INFO  - 2017-09-19 15:43:31.133; [   x:mail] org.apache.solr.core.SolrCore; [mail]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=92
+INFO  - 2017-09-19 15:43:31.134; [   x:mail] org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2017-09-19 15:43:31.134; [   x:mail] org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2017-09-19 15:43:31.134; [   x:mail] org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2017-09-19 15:43:31.134; [   x:mail] org.apache.solr.handler.component.SuggestComponent$SuggesterListener; buildOnStartup: mySuggester
+INFO  - 2017-09-19 15:43:31.136; [   x:mail] org.apache.solr.spelling.suggest.SolrSuggester; SolrSuggester.build(mySuggester)
+INFO  - 2017-09-19 15:43:31.133; [   x:solr] org.apache.solr.core.SolrCore; [solr]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=92
+INFO  - 2017-09-19 15:43:31.137; [   x:solr] org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2017-09-19 15:43:31.140; [   x:solr] org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2017-09-19 15:43:31.140; [   x:solr] org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2017-09-19 15:43:31.140; [   x:solr] org.apache.solr.handler.component.SuggestComponent$SuggesterListener; buildOnStartup: mySuggester
+INFO  - 2017-09-19 15:43:31.140; [   x:solr] org.apache.solr.spelling.suggest.SolrSuggester; SolrSuggester.build(mySuggester)
+INFO  - 2017-09-19 15:43:31.144; [   ] org.apache.solr.core.SolrResourceLoader; [atom] Added 2 libs to classloader, from paths: [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/dist]
+INFO  - 2017-09-19 15:43:31.154; [   ] org.apache.solr.core.SolrResourceLoader; [tika] Added 37 libs to classloader, from paths: [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/extraction/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/dist]
+INFO  - 2017-09-19 15:43:31.164; [   x:db] org.apache.solr.core.SolrCore; [db]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=3 status=0 QTime=123
+INFO  - 2017-09-19 15:43:31.174; [   ] org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 6.6.0
+INFO  - 2017-09-19 15:43:31.178; [   x:mail] org.apache.solr.core.SolrCore; [mail] Registered new searcher Searcher@4303ecab[mail] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+INFO  - 2017-09-19 15:43:31.178; [   x:solr] org.apache.solr.core.SolrCore; [solr] Registered new searcher Searcher@1dfc6d89[solr] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+INFO  - 2017-09-19 15:43:31.211; [   x:db] org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2017-09-19 15:43:31.211; [   x:db] org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2017-09-19 15:43:31.211; [   x:db] org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2017-09-19 15:43:31.211; [   x:db] org.apache.solr.handler.component.SuggestComponent$SuggesterListener; buildOnStartup: mySuggester
+INFO  - 2017-09-19 15:43:31.212; [   x:db] org.apache.solr.spelling.suggest.SolrSuggester; SolrSuggester.build(mySuggester)
+INFO  - 2017-09-19 15:43:31.239; [   ] org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 6.6.0
+INFO  - 2017-09-19 15:43:31.269; [   x:db] org.apache.solr.core.SolrCore; [db] Registered new searcher Searcher@1904b652[db] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.6.0):C16)))}
+INFO  - 2017-09-19 15:43:31.270; [   ] org.apache.solr.schema.IndexSchema; [atom] Schema name=example-DIH-atom
+INFO  - 2017-09-19 15:43:31.300; [   ] org.apache.solr.schema.IndexSchema; [tika] Schema name=example-DIH-tika
+INFO  - 2017-09-19 15:43:31.303; [   ] org.apache.solr.schema.IndexSchema; Loaded schema example-DIH-tika/1.6 with uniqueid field id
+INFO  - 2017-09-19 15:43:31.303; [   ] org.apache.solr.core.CoreContainer; Creating SolrCore 'tika' using configuration from instancedir /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/tika, trusted=true
+INFO  - 2017-09-19 15:43:31.304; [   ] org.apache.solr.core.SolrCore; solr.RecoveryStrategy.Builder
+INFO  - 2017-09-19 15:43:31.304; [   ] org.apache.solr.core.SolrCore; [[tika] ] Opening new SolrCore at [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/tika], dataDir=[/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/tika/data/]
+INFO  - 2017-09-19 15:43:31.347; [   ] org.apache.solr.update.CommitTracker; Hard AutoCommit: disabled
+INFO  - 2017-09-19 15:43:31.347; [   ] org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2017-09-19 15:43:31.518; [   ] org.apache.solr.schema.IndexSchema; Loaded schema example-DIH-atom/1.6 with uniqueid field id
+INFO  - 2017-09-19 15:43:31.523; [   ] org.apache.solr.core.CoreContainer; Creating SolrCore 'atom' using configuration from instancedir /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/atom, trusted=true
+INFO  - 2017-09-19 15:43:31.523; [   ] org.apache.solr.core.SolrCore; solr.RecoveryStrategy.Builder
+INFO  - 2017-09-19 15:43:31.523; [   ] org.apache.solr.core.SolrCore; [[atom] ] Opening new SolrCore at [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/atom], dataDir=[/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/atom/data/]
+INFO  - 2017-09-19 15:43:31.854; [   ] org.apache.solr.update.CommitTracker; Hard AutoCommit: disabled
+INFO  - 2017-09-19 15:43:31.854; [   ] org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2017-09-19 15:43:31.880; [   ] org.apache.solr.search.SolrIndexSearcher; Opening [Searcher@46602d28[tika] main]
+INFO  - 2017-09-19 15:43:31.881; [   ] org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/tika/conf
+INFO  - 2017-09-19 15:43:31.881; [   ] org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2017-09-19 15:43:31.887; [   ] org.apache.solr.core.SolrCore; [tika] Registered new searcher Searcher@46602d28[tika] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.6.0):C2)))}
+INFO  - 2017-09-19 15:43:31.908; [   ] org.apache.solr.search.SolrIndexSearcher; Opening [Searcher@563809dd[atom] main]
+INFO  - 2017-09-19 15:43:31.909; [   ] org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/example/example-DIH/solr/atom/conf
+INFO  - 2017-09-19 15:43:31.935; [   ] org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2017-09-19 15:43:31.940; [   ] org.apache.solr.core.SolrCore; [atom] Registered new searcher Searcher@563809dd[atom] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(6.6.0):C30)))}
+INFO  - 2017-09-19 15:49:51.211; [   ] org.apache.solr.core.TransientSolrCoreCacheDefault; Allocating transient cache for 2147483647 transient cores
+INFO  - 2017-09-19 15:49:52.561; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505836191942} status=0 QTime=1
+INFO  - 2017-09-19 15:49:52.667; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1505836191944} status=0 QTime=92
+INFO  - 2017-09-19 15:49:52.667; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1505836191944} status=0 QTime=94
+INFO  - 2017-09-19 15:49:56.939; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505836191942} status=0 QTime=0
+INFO  - 2017-09-19 15:49:56.958; [   x:solr] org.apache.solr.core.SolrCore; [solr]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1505836191944&ts=1505836191944} status=503 QTime=3
+INFO  - 2017-09-19 15:49:56.972; [   x:solr] org.apache.solr.core.SolrCore; [solr]  webapp=/solr path=/replication params={wt=json&command=details&_=1505836196872} status=0 QTime=21
+INFO  - 2017-09-19 15:49:56.973; [   x:solr] org.apache.solr.core.SolrCore; [solr]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1505836196871} status=0 QTime=22
+INFO  - 2017-09-19 15:49:56.979; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1505836191944} status=0 QTime=32
+INFO  - 2017-09-19 15:49:56.980; [   x:solr] org.apache.solr.core.SolrCore; [solr]  webapp=/solr path=/admin/system params={wt=json&_=1505836196872} status=0 QTime=28
+INFO  - 2017-09-19 15:50:01.367; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505836191942} status=0 QTime=0
+INFO  - 2017-09-19 15:50:01.382; [   x:atom] org.apache.solr.core.SolrCore; [atom]  webapp=/solr path=/replication params={wt=json&command=details&_=1505836196872} status=0 QTime=2
+INFO  - 2017-09-19 15:50:01.382; [   x:atom] org.apache.solr.core.SolrCore; [atom]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1505836191944&ts=1505836191944} status=503 QTime=0
+INFO  - 2017-09-19 15:50:01.393; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1505836191944} status=0 QTime=24
+INFO  - 2017-09-19 15:50:01.423; [   x:atom] org.apache.solr.core.SolrCore; [atom]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1505836196871} status=0 QTime=52
+INFO  - 2017-09-19 15:50:01.431; [   x:atom] org.apache.solr.core.SolrCore; [atom]  webapp=/solr path=/admin/system params={wt=json&_=1505836196872} status=0 QTime=48
+INFO  - 2017-09-19 15:50:06.953; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505836191942} status=0 QTime=0
+INFO  - 2017-09-19 15:50:06.986; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1505836191944} status=0 QTime=33
+INFO  - 2017-09-19 15:50:08.170; [   x:atom] org.apache.solr.core.SolrCore; [atom]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1505836206726} hits=30 status=0 QTime=1
+INFO  - 2017-09-19 15:50:10.567; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505836191942} status=0 QTime=0
+INFO  - 2017-09-19 15:50:10.579; [   x:atom] org.apache.solr.core.SolrCore; [atom]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1505836210489} status=0 QTime=1
+INFO  - 2017-09-19 15:50:10.583; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1505836191944} status=0 QTime=14
+INFO  - 2017-09-19 15:50:10.785; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505836191942} status=0 QTime=0
+INFO  - 2017-09-19 15:50:10.791; [   x:atom] org.apache.solr.core.SolrCore; [atom]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1505836210489} status=0 QTime=0
+INFO  - 2017-09-19 15:50:10.813; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1505836191944} status=0 QTime=27
+INFO  - 2017-09-19 15:50:10.825; [   x:atom] org.apache.solr.core.SolrCore; [atom]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1505836210490} status=0 QTime=32
+INFO  - 2017-09-19 15:50:10.945; [   x:atom] org.apache.solr.core.SolrCore; [atom]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1505836210490} status=0 QTime=0
+INFO  - 2017-09-19 15:50:23.254; [   ] org.eclipse.jetty.server.AbstractConnector; Stopped ServerConnector@72cc7e6f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+INFO  - 2017-09-19 15:50:23.254; [   ] org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=581318631
+INFO  - 2017-09-19 15:50:23.255; [   ] org.apache.solr.metrics.SolrMetricManager; Closing metric reporters for: solr.node
+INFO  - 2017-09-19 15:50:23.255; [   ] org.apache.solr.metrics.SolrMetricManager; Closing metric reporters for: solr.jvm
+INFO  - 2017-09-19 15:50:23.255; [   ] org.apache.solr.metrics.SolrMetricManager; Closing metric reporters for: solr.jetty
+INFO  - 2017-09-19 15:50:23.263; [   x:solr] org.apache.solr.core.SolrCore; [solr]  CLOSING SolrCore org.apache.solr.core.SolrCore@2f7ebdd9
+INFO  - 2017-09-19 15:50:23.264; [   x:mail] org.apache.solr.core.SolrCore; [mail]  CLOSING SolrCore org.apache.solr.core.SolrCore@15ac3536
+INFO  - 2017-09-19 15:50:23.264; [   x:atom] org.apache.solr.core.SolrCore; [atom]  CLOSING SolrCore org.apache.solr.core.SolrCore@5af75dc8
+INFO  - 2017-09-19 15:50:23.265; [   x:db] org.apache.solr.core.SolrCore; [db]  CLOSING SolrCore org.apache.solr.core.SolrCore@683ec1f6
+INFO  - 2017-09-19 15:50:23.267; [   x:tika] org.apache.solr.core.SolrCore; [tika]  CLOSING SolrCore org.apache.solr.core.SolrCore@23c21c89
+INFO  - 2017-09-19 15:50:23.372; [   x:mail] org.apache.solr.metrics.SolrMetricManager; Closing metric reporters for: solr.core.mail
+INFO  - 2017-09-19 15:50:23.385; [   x:db] org.apache.solr.metrics.SolrMetricManager; Closing metric reporters for: solr.core.db
+INFO  - 2017-09-19 15:50:23.388; [   x:solr] org.apache.solr.metrics.SolrMetricManager; Closing metric reporters for: solr.core.solr
+INFO  - 2017-09-19 15:50:23.394; [   x:tika] org.apache.solr.metrics.SolrMetricManager; Closing metric reporters for: solr.core.tika
+INFO  - 2017-09-19 15:50:23.396; [   x:atom] org.apache.solr.metrics.SolrMetricManager; Closing metric reporters for: solr.core.atom
+INFO  - 2017-09-19 15:50:23.399; [   ] org.eclipse.jetty.server.handler.ContextHandler; Stopped o.e.j.w.WebAppContext@7a1ebcd8{/solr,null,UNAVAILABLE}{/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr-webapp/webapp}

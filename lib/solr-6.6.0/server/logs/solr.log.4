@@ -1,0 +1,135 @@
+2017-09-21 15:37:19.546 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-09-21 15:37:19.985 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.0
+2017-09-21 15:37:19.986 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-09-21 15:37:19.986 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0
+2017-09-21 15:37:20.002 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-09-21T15:37:19.987Z
+2017-09-21 15:37:20.003 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-09-21 15:37:20.016 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr
+2017-09-21 15:37:20.021 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/solr.xml
+2017-09-21 15:37:20.312 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-09-21 15:37:20.580 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 4 core definitions underneath /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr
+2017-09-21 15:37:20.582 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [ojs, testing, tika, atom]
+2017-09-21 15:37:20.636 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.c.SolrResourceLoader [ojs] Added 2 libs to classloader, from paths: [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/dist]
+2017-09-21 15:37:20.639 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.c.SolrResourceLoader [tika] Added 37 libs to classloader, from paths: [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/extraction/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/dist]
+2017-09-21 15:37:20.704 INFO  (main) [   ] o.e.j.s.Server Started @1633ms
+2017-09-21 15:37:20.781 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.c.SolrResourceLoader [testing] Added 53 libs to classloader, from paths: [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/clustering/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/extraction/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/langid/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/velocity/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/dist]
+2017-09-21 15:37:20.886 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.0
+2017-09-21 15:37:20.895 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.0
+2017-09-21 15:37:20.927 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.0
+2017-09-21 15:37:21.095 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.s.IndexSchema [tika] Schema name=example-DIH-tika
+2017-09-21 15:37:21.098 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.s.IndexSchema [ojs] Schema name=example-DIH-atom
+2017-09-21 15:37:21.150 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.s.IndexSchema Loaded schema example-DIH-tika/1.6 with uniqueid field id
+2017-09-21 15:37:21.150 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.c.CoreContainer Creating SolrCore 'tika' using configuration from instancedir /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/tika, trusted=true
+2017-09-21 15:37:21.274 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-09-21 15:37:21.310 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.c.SolrCore [[tika] ] Opening new SolrCore at [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/tika], dataDir=[/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/tika/data/]
+2017-09-21 15:37:21.342 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.s.IndexSchema [testing] Schema name=example-data-driven-schema
+2017-09-21 15:37:21.527 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.s.IndexSchema Loaded schema example-DIH-atom/1.6 with uniqueid field submission_id
+2017-09-21 15:37:21.552 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.c.CoreContainer Creating SolrCore 'ojs' using configuration from instancedir /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/ojs, trusted=true
+2017-09-21 15:37:21.552 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-09-21 15:37:21.552 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.c.SolrCore [[ojs] ] Opening new SolrCore at [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/ojs], dataDir=[/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/ojs/data/]
+2017-09-21 15:37:21.963 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2017-09-21 15:37:21.963 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-09-21 15:37:21.972 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2017-09-21 15:37:21.972 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-09-21 15:37:22.065 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.s.SolrIndexSearcher Opening [Searcher@7b71130f[ojs] main]
+2017-09-21 15:37:22.069 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.s.SolrIndexSearcher Opening [Searcher@5974cbd1[tika] main]
+2017-09-21 15:37:22.080 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/tika/conf
+2017-09-21 15:37:22.080 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/ojs/conf
+2017-09-21 15:37:22.108 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-09-21 15:37:22.109 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-09-21 15:37:22.173 INFO  (searcherExecutor-8-thread-1-processing-x:ojs) [   x:ojs] o.a.s.c.SolrCore [ojs] Registered new searcher Searcher@7b71130f[ojs] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_12(6.6.0):C1)))}
+2017-09-21 15:37:22.188 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [atom] Added 2 libs to classloader, from paths: [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/dist]
+2017-09-21 15:37:22.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.0
+2017-09-21 15:37:22.204 INFO  (searcherExecutor-7-thread-1-processing-x:tika) [   x:tika] o.a.s.c.SolrCore [tika] Registered new searcher Searcher@5974cbd1[tika] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(6.6.0):C1)))}
+2017-09-21 15:37:22.233 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [atom] Schema name=example-DIH-atom
+2017-09-21 15:37:22.259 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema example-DIH-atom/1.6 with uniqueid field id
+2017-09-21 15:37:22.262 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'atom' using configuration from instancedir /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/atom, trusted=true
+2017-09-21 15:37:22.263 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-09-21 15:37:22.263 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore [[atom] ] Opening new SolrCore at [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/atom], dataDir=[/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/atom/data/]
+2017-09-21 15:37:22.298 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-09-21 15:37:22.364 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2017-09-21 15:37:22.364 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-09-21 15:37:22.379 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@f3d04b[atom] main]
+2017-09-21 15:37:22.380 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/atom/conf
+2017-09-21 15:37:22.380 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-09-21 15:37:22.382 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.c.CoreContainer Creating SolrCore 'testing' using configuration from instancedir /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/testing, trusted=true
+2017-09-21 15:37:22.384 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-09-21 15:37:22.384 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.c.SolrCore [[testing] ] Opening new SolrCore at [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/testing], dataDir=[/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/testing/data/]
+2017-09-21 15:37:22.390 INFO  (searcherExecutor-15-thread-1) [   ] o.a.s.c.SolrCore [atom] Registered new searcher Searcher@f3d04b[atom] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_b(6.6.0):C29)))}
+2017-09-21 15:37:22.401 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-09-21 15:37:22.536 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-09-21 15:37:22.536 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-09-21 15:37:22.558 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-09-21 15:37:22.558 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-09-21 15:37:22.562 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.s.SolrIndexSearcher Opening [Searcher@58528950[testing] main]
+2017-09-21 15:37:22.563 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/testing/conf
+2017-09-21 15:37:22.563 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-09-21 15:37:22.568 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-09-21 15:37:22.570 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/testing/conf/elevate.xml
+2017-09-21 15:37:22.582 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-09-21 15:37:22.588 INFO  (searcherExecutor-19-thread-1-processing-x:testing) [   x:testing] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@58528950[testing] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-09-21 15:37:22.588 INFO  (searcherExecutor-19-thread-1-processing-x:testing) [   x:testing] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-09-21 15:37:22.588 INFO  (searcherExecutor-19-thread-1-processing-x:testing) [   x:testing] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-09-21 15:37:22.589 INFO  (searcherExecutor-19-thread-1-processing-x:testing) [   x:testing] o.a.s.c.SolrCore [testing] Registered new searcher Searcher@58528950[testing] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-09-21 15:37:33.501 INFO  (qtp205125520-19) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-09-21 15:37:33.510 INFO  (qtp205125520-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506006420213} status=0 QTime=20
+2017-09-21 15:37:33.540 INFO  (qtp205125520-20) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1506006420819} status=0 QTime=55
+2017-09-21 15:37:33.561 INFO  (qtp205125520-11) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506006420213} status=0 QTime=80
+2017-09-21 15:37:33.813 INFO  (qtp205125520-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506006420213} status=0 QTime=0
+2017-09-21 15:37:33.844 INFO  (qtp205125520-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506006420213} status=0 QTime=9
+2017-09-21 15:37:33.869 INFO  (qtp205125520-17) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1506006420819} status=0 QTime=0
+2017-09-21 15:37:33.884 INFO  (qtp205125520-18) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1506006420821} status=0 QTime=3
+2017-09-21 15:37:34.077 INFO  (qtp205125520-12) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1506006420821} status=0 QTime=0
+2017-09-21 15:37:39.809 INFO  (qtp205125520-20) [   x:ojs] o.a.s.h.d.DataImporter Loading DIH Configuration: ojs-data-config.xml
+2017-09-21 15:37:39.828 INFO  (qtp205125520-20) [   x:ojs] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-09-21 15:37:39.838 INFO  (qtp205125520-20) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/dataimport params={core=ojs&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1506006420821&verbose=false} status=0 QTime=30
+2017-09-21 15:37:39.842 INFO  (Thread-14) [   x:ojs] o.a.s.h.d.DataImporter Starting Full Import
+2017-09-21 15:37:39.864 INFO  (Thread-14) [   x:ojs] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-09-21 15:37:39.892 INFO  (qtp205125520-11) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1506006420821} status=0 QTime=1
+2017-09-21 15:37:39.983 INFO  (Thread-14) [   x:ojs] o.a.s.u.DirectUpdateHandler2 [ojs] REMOVING ALL DOCUMENTS FROM INDEX
+2017-09-21 15:37:40.278 INFO  (Thread-14) [   x:ojs] o.a.s.h.d.DocBuilder Import completed successfully
+2017-09-21 15:37:40.279 INFO  (Thread-14) [   x:ojs] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-09-21 15:37:40.279 INFO  (Thread-14) [   x:ojs] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@27be780e
+2017-09-21 15:37:40.481 INFO  (Thread-14) [   x:ojs] o.a.s.s.SolrIndexSearcher Opening [Searcher@4906f38a[ojs] main]
+2017-09-21 15:37:40.483 INFO  (Thread-14) [   x:ojs] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-09-21 15:37:40.483 INFO  (searcherExecutor-8-thread-1-processing-x:ojs) [   x:ojs] o.a.s.c.SolrCore [ojs] Registered new searcher Searcher@4906f38a[ojs] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_13(6.6.0):C1)))}
+2017-09-21 15:37:40.487 INFO  (Thread-14) [   x:ojs] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-09-21 15:37:40.488 INFO  (Thread-14) [   x:ojs] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2017-09-21 15:37:40.489 INFO  (Thread-14) [   x:ojs] o.a.s.h.d.DocBuilder Time taken = 0:0:0.623
+2017-09-21 15:37:40.489 INFO  (Thread-14) [   x:ojs] o.a.s.u.p.LogUpdateProcessorFactory [ojs]  webapp=/solr path=/dataimport params={core=ojs&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1506006420821&verbose=false} status=0 QTime=30{deleteByQuery=*:*,add=[2],commit=} 0 681
+2017-09-21 15:37:41.331 INFO  (qtp205125520-14) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1506006420821} status=0 QTime=0
+2017-09-21 15:37:44.936 INFO  (qtp205125520-16) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1505994226271} hits=1 status=0 QTime=12
+2017-09-21 15:46:35.120 INFO  (qtp205125520-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506008794273} status=0 QTime=0
+2017-09-21 15:46:35.149 INFO  (qtp205125520-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506008794274} status=0 QTime=20
+2017-09-21 15:46:37.626 INFO  (qtp205125520-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506008794273} status=0 QTime=0
+2017-09-21 15:46:37.640 INFO  (qtp205125520-11) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1506008794274&ts=1506008794274} status=503 QTime=1
+2017-09-21 15:46:37.645 INFO  (qtp205125520-12) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/replication params={wt=json&command=details&_=1506008797551} status=0 QTime=1
+2017-09-21 15:46:37.664 INFO  (qtp205125520-11) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1506008797543} status=0 QTime=22
+2017-09-21 15:46:37.668 INFO  (qtp205125520-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506008794274} status=0 QTime=38
+2017-09-21 15:46:37.697 INFO  (qtp205125520-13) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/admin/system params={wt=json&_=1506008797544} status=0 QTime=52
+2017-09-21 15:46:40.387 INFO  (qtp205125520-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506008794273} status=0 QTime=0
+2017-09-21 15:46:40.393 INFO  (qtp205125520-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506008794274} status=0 QTime=6
+2017-09-21 15:46:45.712 INFO  (qtp205125520-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/select params={q=panic&indent=on&wt=json&_=1506008794839} hits=0 status=0 QTime=18
+2017-09-21 15:46:50.493 INFO  (qtp205125520-18) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/select params={indent=on&wt=json&_=1506008794839} hits=0 status=0 QTime=1
+2017-09-21 15:46:55.172 INFO  (qtp205125520-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1506008794839} hits=1 status=0 QTime=0
+2017-09-21 15:47:03.122 INFO  (qtp205125520-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506008794273} status=0 QTime=0
+2017-09-21 15:47:03.123 INFO  (qtp205125520-14) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1506008797543} status=0 QTime=0
+2017-09-21 15:47:03.140 INFO  (qtp205125520-14) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1506008794274&ts=1506008794274} status=503 QTime=0
+2017-09-21 15:47:03.142 INFO  (qtp205125520-14) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/replication params={wt=json&command=details&_=1506008797551} status=0 QTime=0
+2017-09-21 15:47:03.148 INFO  (qtp205125520-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506008794274} status=0 QTime=24
+2017-09-21 15:47:03.177 INFO  (qtp205125520-14) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/admin/system params={wt=json&_=1506008797544} status=0 QTime=33
+2017-09-21 15:47:04.717 INFO  (qtp205125520-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506008794273} status=0 QTime=0
+2017-09-21 15:47:04.727 INFO  (qtp205125520-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506008794274} status=0 QTime=4
+2017-09-21 15:47:06.045 INFO  (qtp205125520-11) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1506008794839} hits=1 status=0 QTime=0
+2017-09-21 15:50:43.253 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=558216562
+2017-09-21 15:50:43.253 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
+2017-09-21 15:50:43.253 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
+2017-09-21 15:50:43.253 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty
+2017-09-21 15:50:43.254 INFO  (coreCloseExecutor-24-thread-1) [   x:ojs] o.a.s.c.SolrCore [ojs]  CLOSING SolrCore org.apache.solr.core.SolrCore@7e891419
+2017-09-21 15:50:43.255 INFO  (coreCloseExecutor-24-thread-2) [   x:tika] o.a.s.c.SolrCore [tika]  CLOSING SolrCore org.apache.solr.core.SolrCore@1013aabf
+2017-09-21 15:50:43.259 INFO  (coreCloseExecutor-24-thread-3) [   x:atom] o.a.s.c.SolrCore [atom]  CLOSING SolrCore org.apache.solr.core.SolrCore@77bef9f5
+2017-09-21 15:50:43.297 INFO  (coreCloseExecutor-24-thread-1) [   x:ojs] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.ojs
+2017-09-21 15:50:43.302 INFO  (coreCloseExecutor-24-thread-4) [   x:testing] o.a.s.c.SolrCore [testing]  CLOSING SolrCore org.apache.solr.core.SolrCore@15ffd9b2
+2017-09-21 15:50:43.322 INFO  (coreCloseExecutor-24-thread-2) [   x:tika] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.tika
+2017-09-21 15:50:43.349 INFO  (coreCloseExecutor-24-thread-4) [   x:testing] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.testing
+2017-09-21 15:50:43.365 INFO  (coreCloseExecutor-24-thread-3) [   x:atom] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.atom

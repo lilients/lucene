@@ -1,0 +1,95 @@
+2017-09-22 09:03:17.102 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-09-22 09:03:18.782 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.0
+2017-09-22 09:03:18.783 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-09-22 09:03:18.783 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0
+2017-09-22 09:03:18.870 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-09-22T09:03:18.784Z
+2017-09-22 09:03:18.870 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-09-22 09:03:19.161 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr
+2017-09-22 09:03:19.251 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/solr.xml
+2017-09-22 09:03:23.708 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-09-22 09:03:24.767 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 4 core definitions underneath /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr
+2017-09-22 09:03:24.769 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [ojs, testing, tika, atom]
+2017-09-22 09:03:25.093 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.c.SolrResourceLoader [ojs] Added 2 libs to classloader, from paths: [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/dist]
+2017-09-22 09:03:25.094 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.c.SolrResourceLoader [tika] Added 37 libs to classloader, from paths: [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/extraction/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/dist]
+2017-09-22 09:03:25.214 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.c.SolrResourceLoader [testing] Added 53 libs to classloader, from paths: [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/clustering/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/extraction/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/langid/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/contrib/velocity/lib, /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/dist]
+2017-09-22 09:03:25.565 INFO  (main) [   ] o.e.j.s.Server Started @13131ms
+2017-09-22 09:03:27.292 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.0
+2017-09-22 09:03:27.486 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.0
+2017-09-22 09:03:28.051 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.s.IndexSchema [tika] Schema name=example-DIH-tika
+2017-09-22 09:03:28.092 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.s.IndexSchema [ojs] Schema name=example-DIH-atom
+2017-09-22 09:03:28.111 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.0
+2017-09-22 09:03:28.355 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.s.IndexSchema Loaded schema example-DIH-tika/1.6 with uniqueid field id
+2017-09-22 09:03:28.356 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.c.CoreContainer Creating SolrCore 'tika' using configuration from instancedir /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/tika, trusted=true
+2017-09-22 09:03:28.538 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.s.IndexSchema [testing] Schema name=example-data-driven-schema
+2017-09-22 09:03:28.764 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-09-22 09:03:28.803 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.c.SolrCore [[tika] ] Opening new SolrCore at [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/tika], dataDir=[/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/tika/data/]
+2017-09-22 09:03:28.977 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.s.IndexSchema Loaded schema example-DIH-atom/1.6 with uniqueid field submission_id
+2017-09-22 09:03:28.983 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.c.CoreContainer Creating SolrCore 'ojs' using configuration from instancedir /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/ojs, trusted=true
+2017-09-22 09:03:28.984 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-09-22 09:03:28.985 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.c.SolrCore [[ojs] ] Opening new SolrCore at [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/ojs], dataDir=[/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/ojs/data/]
+2017-09-22 09:03:30.640 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2017-09-22 09:03:30.640 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2017-09-22 09:03:30.640 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-09-22 09:03:30.640 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-09-22 09:03:31.188 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.s.SolrIndexSearcher Opening [Searcher@329f7992[tika] main]
+2017-09-22 09:03:31.188 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.s.SolrIndexSearcher Opening [Searcher@1860564d[ojs] main]
+2017-09-22 09:03:31.275 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/tika/conf
+2017-09-22 09:03:31.276 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/ojs/conf
+2017-09-22 09:03:31.360 INFO  (coreLoadExecutor-6-thread-3) [   x:tika] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-09-22 09:03:31.362 INFO  (coreLoadExecutor-6-thread-1) [   x:ojs] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-09-22 09:03:31.426 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-09-22 09:03:31.585 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.c.CoreContainer Creating SolrCore 'testing' using configuration from instancedir /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/testing, trusted=true
+2017-09-22 09:03:31.630 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-09-22 09:03:31.630 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.c.SolrCore [[testing] ] Opening new SolrCore at [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/testing], dataDir=[/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/testing/data/]
+2017-09-22 09:03:31.653 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-09-22 09:03:31.718 INFO  (searcherExecutor-7-thread-1-processing-x:tika) [   x:tika] o.a.s.c.SolrCore [tika] Registered new searcher Searcher@329f7992[tika] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(6.6.0):C1)))}
+2017-09-22 09:03:31.718 INFO  (searcherExecutor-8-thread-1-processing-x:ojs) [   x:ojs] o.a.s.c.SolrCore [ojs] Registered new searcher Searcher@1860564d[ojs] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_15(6.6.0):C1)))}
+2017-09-22 09:03:31.737 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader [atom] Added 2 libs to classloader, from paths: [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/dist]
+2017-09-22 09:03:31.757 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.0
+2017-09-22 09:03:31.811 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema [atom] Schema name=example-DIH-atom
+2017-09-22 09:03:31.875 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema Loaded schema example-DIH-atom/1.6 with uniqueid field id
+2017-09-22 09:03:31.883 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.CoreContainer Creating SolrCore 'atom' using configuration from instancedir /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/atom, trusted=true
+2017-09-22 09:03:31.891 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-09-22 09:03:31.894 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrCore [[atom] ] Opening new SolrCore at [/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/atom], dataDir=[/opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/atom/data/]
+2017-09-22 09:03:32.035 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2017-09-22 09:03:32.035 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-09-22 09:03:32.093 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-09-22 09:03:32.094 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-09-22 09:03:32.161 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@62ddde80[atom] main]
+2017-09-22 09:03:32.164 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/atom/conf
+2017-09-22 09:03:32.164 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-09-22 09:03:32.168 INFO  (searcherExecutor-16-thread-1) [   ] o.a.s.c.SolrCore [atom] Registered new searcher Searcher@62ddde80[atom] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_b(6.6.0):C29)))}
+2017-09-22 09:03:32.276 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-09-22 09:03:32.284 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-09-22 09:03:32.291 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.s.SolrIndexSearcher Opening [Searcher@6f358a36[testing] main]
+2017-09-22 09:03:32.292 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/testing/conf
+2017-09-22 09:03:32.292 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-09-22 09:03:32.317 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-09-22 09:03:32.319 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /opt/lampp/htdocs/playground/ojs-lucene/plugins/generic/lucene/lib/solr-6.6.0/server/solr/testing/conf/elevate.xml
+2017-09-22 09:03:32.345 INFO  (coreLoadExecutor-6-thread-2) [   x:testing] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-09-22 09:03:32.348 INFO  (searcherExecutor-15-thread-1-processing-x:testing) [   x:testing] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6f358a36[testing] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-09-22 09:03:32.348 INFO  (searcherExecutor-15-thread-1-processing-x:testing) [   x:testing] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-09-22 09:03:32.349 INFO  (searcherExecutor-15-thread-1-processing-x:testing) [   x:testing] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-09-22 09:03:32.352 INFO  (searcherExecutor-15-thread-1-processing-x:testing) [   x:testing] o.a.s.c.SolrCore [testing] Registered new searcher Searcher@6f358a36[testing] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-09-22 09:05:12.338 INFO  (qtp205125520-11) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-09-22 09:05:14.072 INFO  (qtp205125520-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506071113504} status=0 QTime=5
+2017-09-22 09:05:14.175 INFO  (qtp205125520-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506071113506} status=0 QTime=94
+2017-09-22 09:05:14.181 INFO  (qtp205125520-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506071113506} status=0 QTime=100
+2017-09-22 09:05:18.192 INFO  (qtp205125520-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506071113504} status=0 QTime=0
+2017-09-22 09:05:18.208 INFO  (qtp205125520-17) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/replication params={wt=json&command=details&_=1506071118090} status=0 QTime=10
+2017-09-22 09:05:18.232 INFO  (qtp205125520-14) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1506071113506&ts=1506071113506} status=503 QTime=24
+2017-09-22 09:05:18.238 INFO  (qtp205125520-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506071113506} status=0 QTime=41
+2017-09-22 09:05:18.248 INFO  (qtp205125520-20) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1506071118087} status=0 QTime=51
+2017-09-22 09:05:18.254 INFO  (qtp205125520-16) [   x:ojs] o.a.s.c.S.Request [ojs]  webapp=/solr path=/admin/system params={wt=json&_=1506071118088} status=0 QTime=48
+2017-09-22 16:29:41.651 INFO  (Thread-0) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=558216562
+2017-09-22 16:29:41.713 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
+2017-09-22 16:29:41.713 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
+2017-09-22 16:29:41.713 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty
+2017-09-22 16:29:41.717 INFO  (coreCloseExecutor-24-thread-1) [   x:ojs] o.a.s.c.SolrCore [ojs]  CLOSING SolrCore org.apache.solr.core.SolrCore@6b7f8753
+2017-09-22 16:29:41.722 INFO  (coreCloseExecutor-24-thread-2) [   x:tika] o.a.s.c.SolrCore [tika]  CLOSING SolrCore org.apache.solr.core.SolrCore@47402cf6
+2017-09-22 16:29:41.723 INFO  (coreCloseExecutor-24-thread-3) [   x:atom] o.a.s.c.SolrCore [atom]  CLOSING SolrCore org.apache.solr.core.SolrCore@57624210
+2017-09-22 16:29:41.724 INFO  (coreCloseExecutor-24-thread-4) [   x:testing] o.a.s.c.SolrCore [testing]  CLOSING SolrCore org.apache.solr.core.SolrCore@6b930a8c
+2017-09-22 16:29:42.011 INFO  (coreCloseExecutor-24-thread-4) [   x:testing] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.testing
+2017-09-22 16:29:42.052 INFO  (coreCloseExecutor-24-thread-1) [   x:ojs] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.ojs
+2017-09-22 16:29:42.056 INFO  (coreCloseExecutor-24-thread-2) [   x:tika] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.tika
+2017-09-22 16:29:42.056 INFO  (coreCloseExecutor-24-thread-3) [   x:atom] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.atom

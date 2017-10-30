@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<articleList hasMore="no">
+	<article id="2" sectionId="2" journalId="2" instId="localhost" loadAction="replace">
+		<authorList>
+			<author>Author, Test</author>
+		</authorList>
+		<titleList>
+			<title locale="de_DE" sortOnly="true">Test Artikel 2</title>
+			<title locale="en_US" sortOnly="false">Test Artikel 2</title></titleList>
+		<abstractList>
+			<abstract locale="en_US">&lt;p&gt;Zusammenfassung von Test Artikel 2&lt;/p&gt;</abstract>
+		</abstractList>
+		<typeList><type locale="en_US">Type</type></typeList>
+		<coverageList><coverage locale="en_US">Coverage Information</coverage></coverageList>
+		<journalTitleList>
+			<journalTitle locale="de_DE" sortOnly="false">Testzeitschrift 2</journalTitle>
+			<journalTitle locale="en_US" sortOnly="false">Testzeitschrift 2</journalTitle>
+		</journalTitleList>
+		<publicationDate>2017-09-04T22:00:00Z</publicationDate>
+		<issuePublicationDate>2017-09-05T12:41:43Z</issuePublicationDate>
+		<filePath>http://localhost/playground/ojs-lucene/index.php/test2/article/download/2/7</filePath>
+		<galley-xml><![CDATA[<galleyList><galley locale="en_US" fileName="http://localhost/playground/ojs-lucene/index.php/test2/article/download/2/7"/></galleyList>]]></galley-xml>
+	</article>
+</articleList>

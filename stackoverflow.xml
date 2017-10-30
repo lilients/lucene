@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:re="http://purl.org/atompub/rank/1.0">
+    <title type="text">Active questions tagged solr - Stack Overflow</title>
+    <link rel="self" href="https://stackoverflow.com/feeds/tag/solr" type="application/atom+xml" />
+    <link rel="alternate" href="https://stackoverflow.com/questions/tagged/?tagnames=solr&amp;sort=active" type="text/html" />
+    <subtitle>most recent 30 from stackoverflow.com</subtitle>
+    <updated>2017-09-21T08:13:53Z</updated>
+    <id>https://stackoverflow.com/feeds/tag/solr</id>
+    <creativeCommons:license>http://www.creativecommons.org/licenses/by-sa/3.0/rdf</creativeCommons:license> 
+   
+    <entry>
+        <id>https://stackoverflow.com/q/46338137</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to create new core in solrj</title>
+            <category scheme="https://stackoverflow.com/tags" term="java" />
+            <category scheme="https://stackoverflow.com/tags" term="spring-boot" />
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="solrj" />
+        <author>
+            <name>SerSergious</name>
+            <uri>https://stackoverflow.com/users/7839727</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46338137/how-to-create-new-core-in-solrj" />
+        <published>2017-09-21T07:40:11Z</published>
+        <updated>2017-09-21T07:58:48Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am trying to create new core using solrj. I need it to prepare test for my app. I think this code is incomplete or wrong because every time I got a error &quot;no core candidates&quot;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@Bean
+@Profile(&quot;tests&quot;)
+public EmbeddedSolrServer embeddedSolrServer() {
+    String folder = &quot;src/main/resources/solr/&quot;;
+
+    CoreContainer container = new CoreContainer(folder);
+    container.load();
+    return new EmbeddedSolrServer(container, &quot;candidates&quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Error:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;org.apache.solr.common.SolrException: No such core: candidates
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Version:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;dependency&amp;gt;
+        &amp;lt;groupId&amp;gt;org.apache.solr&amp;lt;/groupId&amp;gt;
+        &amp;lt;artifactId&amp;gt;solr-core&amp;lt;/artifactId&amp;gt;
+        &amp;lt;version&amp;gt;6.6.1&amp;lt;/version&amp;gt;
+    &amp;lt;/dependency&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46338287</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Solr merge two shards in one</title>
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="sharding" />
+        <author>
+            <name>Akah</name>
+            <uri>https://stackoverflow.com/users/4167384</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46338287/solr-merge-two-shards-in-one" />
+        <published>2017-09-21T07:49:09Z</published>
+        <updated>2017-09-21T07:49:09Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;ve been using and watching Solr documentation for replication and shard handling.&lt;/p&gt;
+
+&lt;p&gt;I can create and remove replicas without problems.
+I can split a shard easily (It create two new shards and disable the old one).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;shard1 -&amp;gt; shard1_0 and shard1_1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But can I do the opposite operation ?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;shard1_0 and shard1_1 -&amp;gt; shard 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I have not seen anything in the documentation that answers my need.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46338067</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">solr build does not start the solr server and throwing errors</title>
+            <category scheme="https://stackoverflow.com/tags" term="java" />
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="lucene" />
+            <category scheme="https://stackoverflow.com/tags" term="solrj" />
+        <author>
+            <name>sampathsrini</name>
+            <uri>https://stackoverflow.com/users/8646795</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46338067/solr-build-does-not-start-the-solr-server-and-throwing-errors" />
+        <published>2017-09-21T07:36:36Z</published>
+        <updated>2017-09-21T07:36:36Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I build &lt;a href=&quot;https://github.com/apache/lucene-solr&quot; rel=&quot;nofollow noreferrer&quot;&gt;lucene-solr source code&lt;/a&gt; in my eclipse IDE. But when I tried to start the service in the command line using &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{user}\git\lucene-solr\solr\bin&amp;gt;solr start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But I am getting the following error&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Error: Could not find or load main class org.apache.solr.util.SolrCLI
+&quot;Failed removing old solr logs&quot;
+Error: Could not find or load main class org.apache.solr.util.SolrCLI
+&quot;Failed archiving old GC logs&quot;
+Error: Could not find or load main class org.apache.solr.util.SolrCLI
+&quot;Failed archiving old console logs&quot;
+Error: Could not find or load main class org.apache.solr.util.SolrCLI
+&quot;Failed rotating old solr logs&quot;
+Error: Unable to access jarfile start.jar
+Error: Could not find or load main class org.apache.solr.util.SolrCLI
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;How can I resolve this?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46332853</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">What is the interaction between Solr and Zookeeper?</title>
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="apache-zookeeper" />
+            <category scheme="https://stackoverflow.com/tags" term="solrcloud" />
+        <author>
+            <name>Lucio Assis</name>
+            <uri>https://stackoverflow.com/users/1143562</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46332853/what-is-the-interaction-between-solr-and-zookeeper" />
+        <published>2017-09-20T22:49:06Z</published>
+        <updated>2017-09-21T03:16:08Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;ve been working on a system where they use &lt;strong&gt;SolrCloud&lt;/strong&gt;, which entails a &lt;strong&gt;Zookeeper&lt;/strong&gt; ensemble that helps &lt;strong&gt;&quot;manage the overall structure so that both indexing and search requests can be routed properly&quot;&lt;/strong&gt; (straight out of the &lt;a href=&quot;https://lucene.apache.org/solr/guide/6_6/getting-started-with-solrcloud.html&quot; rel=&quot;nofollow noreferrer&quot;&gt;Solr documentation&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What exactly is this &quot;management&quot;&lt;/strong&gt;? What information, &lt;strong&gt;what data&lt;/strong&gt;/configuration/information do the machines running Solr read/write from the Zookeeper ensemble and why? Is the data in Zookeeper ever changed at runtime by solr? Or do you configure &quot;the data&quot; once and runtime is going to be reads all across SolrCloud hosts?&lt;/p&gt;
+
+&lt;p&gt;To put the question into perspective, this is my first contact with Zookeeper, Solr, and in many ways with distributed systems.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/26178056</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Storing searchable JSon in MySql</title>
+            <category scheme="https://stackoverflow.com/tags" term="mysql" />
+            <category scheme="https://stackoverflow.com/tags" term="json" />
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+        <author>
+            <name>samach</name>
+            <uri>https://stackoverflow.com/users/808536</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/26178056/storing-searchable-json-in-mysql" />
+        <published>2014-10-03T11:21:08Z</published>
+        <updated>2017-09-21T03:12:53Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have a following table :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;id | notification_id | user_id | metadata | created_at | modified_at
+--------------------------------------------------------------------
+   |                 |         |          |            |           
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the field &lt;strong&gt;metadata&lt;/strong&gt; contains a json object such as :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{&quot;transferId&quot;:100010003,
+ &quot;timestamp&quot;:1401778800000,
+ &quot;amount&quot;:1150,
+ &quot;customerTimestamp&quot;:1401778800000,
+ &quot;customerFullName&quot;:&quot;John cusack&quot;,
+ &quot;customerMsisdn&quot;:460100000003,
+ &quot;customerMessage&quot;:&quot;Test payment3&quot;,
+ &quot;assignee&quot;:Bob,
+ &quot;comments&quot;:this is a comment,
+ &quot;currency&quot;:&quot;SEK&quot;,
+ &quot;balanced&quot;:false,
+ &quot;inboxNotificationId&quot;:0}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above json is searchable. Meaning there might be a request for transaction metadata where customerName = john cusack and user_id = 1234.&lt;/p&gt;
+
+&lt;p&gt;I totally understand that this is a very bad design. NEVER store a json object in RDBMS if it&#39;s prone to change or it will be searched on.&lt;/p&gt;
+
+&lt;p&gt;I want to optimise the schema so that when I query the data, it does not take a lot of time to return me the results(which currently it takes a lot of time). For this I can think of three options :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Breakup the json object and store the fields in seperate columns and
+index them. &lt;/li&gt;
+&lt;li&gt;Use NoSql DB like MongoDB for storing json&lt;/li&gt;
+&lt;li&gt;Use solr&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Which one is the most logical and beneficial? all of them? May someone please stress specially on solr (since i dont know how it works), regarding why I should or should not use it?&lt;/p&gt;
+
+&lt;p&gt;Cheers!!&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/37093623</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Search on specific IDs in Solr</title>
+            <category scheme="https://stackoverflow.com/tags" term="sql" />
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+        <author>
+            <name>Oee Yan</name>
+            <uri>https://stackoverflow.com/users/6305063</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/37093623/search-on-specific-ids-in-solr" />
+        <published>2016-05-07T20:55:40Z</published>
+        <updated>2017-09-21T00:16:32Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Lets say I have big Solr that holds ~150M documents.
+I also have 100,000 users that each user have documents that he saved. 
+My questions:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;What is the best way to store those documents IDs (the documents that each user saved)&lt;/li&gt;
+&lt;li&gt;If I decided to store the IDs in Mongo or MySql, what is the best way to allow the users to preform searches on their documents, meaning that I store only the Ids on Mongo/MySQL but the actual information is on Solr.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Thanks.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46317687</id>
+        <re:rank scheme="https://stackoverflow.com">-2</re:rank>
+        <title type="text">Lucene: generateWordParts vs splitOnCaseChange</title>
+            <category scheme="https://stackoverflow.com/tags" term="java" />
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="lucene" />
+            <category scheme="https://stackoverflow.com/tags" term="full-text-search" />
+            <category scheme="https://stackoverflow.com/tags" term="hibernate-search" />
+        <author>
+            <name>gstackoverflow</name>
+            <uri>https://stackoverflow.com/users/2674303</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46317687/lucene-generatewordparts-vs-splitoncasechange" />
+        <published>2017-09-20T09:03:16Z</published>
+        <updated>2017-09-20T20:36:03Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am investigating &lt;code&gt;WordDelimiterFilterFactory&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I am confusing about &lt;code&gt;generateWordParts&lt;/code&gt; and &lt;code&gt;splitOnCaseChange&lt;/code&gt; parameters.&lt;/p&gt;
+
+&lt;p&gt;from java doc:&lt;br&gt;
+&lt;strong&gt;generateWordParts&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/**
+   * Causes parts of words to be generated:
+   * &amp;lt;p&amp;gt;
+   * &quot;PowerShot&quot; =&amp;amp;gt; &quot;Power&quot; &quot;Shot&quot;
+   */
+  public static final int GENERATE_WORD_PARTS = 1;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;splitOnCaseChange:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; /**
+   * If not set, causes case changes to be ignored (subwords will only be generated
+   * given SUBWORD_DELIM tokens)
+   */
+  public static final int SPLIT_ON_CASE_CHANGE = 64;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Can you show example which clarify the difference?&lt;/p&gt;
+
+&lt;h2&gt;P.S.&lt;/h2&gt;
+
+&lt;p&gt;Also I don&#39;t understanf menaning of &lt;strong&gt;SUBWORD_DELIM&lt;/strong&gt; &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46330032</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">issues making default collection for solr</title>
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="geonetwork" />
+        <author>
+            <name>samin payro</name>
+            <uri>https://stackoverflow.com/users/8289314</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46330032/issues-making-default-collection-for-solr" />
+        <published>2017-09-20T19:11:46Z</published>
+        <updated>2017-09-20T19:11:46Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am trying to install solr so that my data catalog could use it. To do so, I used these steps which are mentioned on the documentation of my data portal:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd solr/solr-config
+wget http://apache.crihan.fr/dist/lucene/solr/6.0.0/solr-6.0.0.tgz
+tar xvfz solr-6.0.0.tgz
+solr-6.0.0/bin/solr start -c -p 8984
+solr-6.0.0/bin/solr create -p 8984 -c catalog_srv -d src/main/solr-cores/catalog
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;accourding to these instructions I made a directory /opt/solr/solr-config the downloaded and unziped solr, and started it on port 8984. Now I don&#39;t understand how does the last command works. what should be the second path  src/main/solr-cores/catalog? I thought I should generatet the directories src, main solr-cores and catalog inside my solr-config directory and then run this command. but I got errors that solrconfig.xml could not be found. after adding solrconfig.xml to /opt/solr/solr-config/src/main/solr-cores/catalog, now I get an error:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ERROR: Failed to create collection &#39;catalog_srv&#39; due to: {127.0.1.1:8984_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://127.0.1.1:8984/solr: Error CREATEing SolrCore &#39;catalog_srv_shard1_replica1&#39;: Unable to create core [catalog_srv_shard1_replica1] Caused by: Can&#39;t find resource &#39;schema.xml&#39; in classpath or &#39;/configs/catalog_srv&#39;, cwd=/opt/solr/solr-config/solr-6.6.0/server}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;what is schema.xml? is it something about data of my data portal? could you please explain the issue and how should I determine the path src/main/solr-cores/catalog to avoid these errors? what does exactly a default collection of solr do?&lt;/p&gt;
+
+&lt;p&gt;More info: my data portal is an opensource software called geonetwork and the documentation about solr is here: &lt;a href=&quot;http://geonetwork-opensource.org/manuals/trunk/eng/users/maintainer-guide/installing/installing-solr.html?highlight=solr&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://geonetwork-opensource.org/manuals/trunk/eng/users/maintainer-guide/installing/installing-solr.html?highlight=solr&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46329902</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Duplicate indexes appears in the Django-haystack with solr backend</title>
+            <category scheme="https://stackoverflow.com/tags" term="python" />
+            <category scheme="https://stackoverflow.com/tags" term="django" />
+            <category scheme="https://stackoverflow.com/tags" term="search" />
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="django-haystack" />
+        <author>
+            <name>dulatus</name>
+            <uri>https://stackoverflow.com/users/4607549</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46329902/duplicate-indexes-appears-in-the-django-haystack-with-solr-backend" />
+        <published>2017-09-20T19:03:03Z</published>
+        <updated>2017-09-20T19:03:03Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Solr indexes the same model object with duplicate, but id is different. 
+Place/search_indexes.py&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class PlaceIndex(indexes.SearchIndex, indexes.Indexable):
+    text = indexes.CharField(document=True, use_template=True)
+    p_key = indexes.IntegerField(model_attr=&#39;id&#39;,indexed=False)
+    name = indexes.CharField(model_attr=&#39;name&#39;,null=True)
+    location = indexes.LocationField(model_attr=&#39;get_location&#39;,indexed=False)
+    avatar = indexes.CharField(null=True,indexed=False)
+    address = indexes.CharField(model_attr=&#39;address&#39;,null=True,indexed=False)
+    allow_membership = indexes.BooleanField(model_attr=&#39;allow_membership&#39;)
+    location_x = indexes.DecimalField(model_attr=&#39;location_x&#39;,indexed=False)
+    location_y = indexes.DecimalField(model_attr=&#39;location_y&#39;,indexed=False)
+    status = indexes.IntegerField(model_attr=&#39;status&#39;)
+    city = indexes.CharField(model_attr=&#39;city__id&#39;)
+
+    def prepare_avatar(self, obj):
+        if obj.avatar:
+            return obj.avatar.url
+        return None
+
+    def get_model(self):
+        return Place
+
+    def index_queryset(self, using=None):
+        return self.get_model().objects.filter(status=Place.Status.ACTIVE,
+                                           city__status=City.Status.ONLINE).distinct()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Solr shows the duplicates with the all equal to each other, except id field. One index&#39;s id field is valid the second not present in db. 
+What it might be causing this? Or,at least, is there a way to skip the specific index or object when calling update_index? Not index_queryset() because it doesn&#39;t handle indexing per object level?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46328931</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">SolrCloud Merge Indexes in Solr is running very slow</title>
+            <category scheme="https://stackoverflow.com/tags" term="hadoop" />
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="solrj" />
+            <category scheme="https://stackoverflow.com/tags" term="cloudera-cdh" />
+            <category scheme="https://stackoverflow.com/tags" term="solrcloud" />
+        <author>
+            <name>avinash patil</name>
+            <uri>https://stackoverflow.com/users/5569144</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46328931/solrcloud-merge-indexes-in-solr-is-running-very-slow" />
+        <published>2017-09-20T18:04:20Z</published>
+        <updated>2017-09-20T18:04:20Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have a lot of data coming in SolrCloud and we create multiple collections dynamically after a collection threshold is reached.Currently to maintain fast search response speeds after 100M docs a new collection is triggered( 300G in HDFS ) . After SolrCloud ( CDH solr 4.10.3) reaches 150 - 200 collections . So i am trying merge 10  multiple collections to a single new collection shard using merge api in solrj. But the merge index api is running very slow i.e almost 5 mins to merge a collection into a single shard that amounts to almost 50 mins to complete merge operation of a single collection. &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CoreAdminResponse mergeIndexes = CoreAdminRequest.mergeIndexes(destShard, arr, new String[0], secClient);
+            LOGGER.debug(&quot; merge response - {} &quot;, mergeIndexes);
+            Thread.sleep(1000l);
+            secClient.commit(destCollection);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I need information on if there is a way to make the merge faster . I tried optimizing and committing a collection before we run the merge. &lt;/p&gt;
+
+&lt;p&gt;Also any information on how merge runs in the background (does it copy the entire index folder ? ) will also be useful  &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/45329570</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Solr Index-Time Document Boosts not working</title>
+            <category scheme="https://stackoverflow.com/tags" term="search" />
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+        <author>
+            <name>LinuxGnut</name>
+            <uri>https://stackoverflow.com/users/313122</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/45329570/solr-index-time-document-boosts-not-working" />
+        <published>2017-07-26T14:15:46Z</published>
+        <updated>2017-09-20T18:02:02Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I can&#39;t find any solid documentation on using index-time document boosts, aside from how set the boost and that omitNorms needs to be set to false on the field types you&#39;re querying. I&#39;m really at a loss as to what&#39;s happening here. (again -- SIMPLE query, no filters or anything else)&lt;/p&gt;
+
+&lt;p&gt;Assuming I do a simple search for title:scissor or even just &quot;scissor&quot;, I get back 5 results.  If I set a boost of anything between 1.1-1000 on any of these results besides the first result, I would expect this result to have a higher score in the next search.&lt;/p&gt;
+
+&lt;p&gt;What&#39;s happening to me, however, is that these boosted results are coming back with LOWER scores than before I boosted them, and if I try to boost or negatively boost (0.1-0.9) the top result it NEVER changes position).&lt;/p&gt;
+
+&lt;p&gt;For example below, I added a boost of &quot;5&quot; to the fifth result (this is pre-boost):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&quot;explain&quot;: {
+  &quot;File #1&quot;: &quot;\n6.312951 = weight(title:scissor in 495641) [ClassicSimilarity], result of:\n  6.312951 = fieldWeight in 495641, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.625902 = idf(docFreq=10, maxDocs=1231567)\n    0.5 = fieldNorm(doc=495641)\n&quot;,
+  &quot;File #2&quot;: &quot;\n5.5238323 = weight(title:scissor in 984389) [ClassicSimilarity], result of:\n  5.5238323 = fieldWeight in 984389, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.625902 = idf(docFreq=10, maxDocs=1231567)\n    0.4375 = fieldNorm(doc=984389)\n&quot;,
+  &quot;File #3&quot;: &quot;\n5.5238323 = weight(title:scissor in 1098172) [ClassicSimilarity], result of:\n  5.5238323 = fieldWeight in 1098172, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.625902 = idf(docFreq=10, maxDocs=1231567)\n    0.4375 = fieldNorm(doc=1098172)\n&quot;,
+  &quot;File #4&quot;: &quot;\n4.7347136 = weight(title:scissor in 901186) [ClassicSimilarity], result of:\n  4.7347136 = fieldWeight in 901186, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.625902 = idf(docFreq=10, maxDocs=1231567)\n    0.375 = fieldNorm(doc=901186)\n&quot;,
+  &quot;File #5&quot;: &quot;\n4.7347136 = weight(title:scissor in 1037808) [ClassicSimilarity], result of:\n  4.7347136 = fieldWeight in 1037808, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.625902 = idf(docFreq=10, maxDocs=1231567)\n    0.375 = fieldNorm(doc=1037808)\n&quot;,
+  &quot;File #6&quot;: &quot;\n4.7347136 = weight(title:scissor in 1044468) [ClassicSimilarity], result of:\n  4.7347136 = fieldWeight in 1044468, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.625902 = idf(docFreq=10, maxDocs=1231567)\n    0.375 = fieldNorm(doc=1044468)\n&quot;,
+  &quot;File #7&quot;: &quot;\n4.4639306 = weight(title:scissor in 972468) [ClassicSimilarity], result of:\n  4.4639306 = fieldWeight in 972468, product of:\n    1.4142135 = tf(freq=2.0), with freq of:\n      2.0 = termFreq=2.0\n    12.625902 = idf(docFreq=10, maxDocs=1231567)\n    0.25 = fieldNorm(doc=972468)\n&quot;,
+  &quot;File #8&quot;: &quot;\n3.9455943 = weight(title:scissor in 896318) [ClassicSimilarity], result of:\n  3.9455943 = fieldWeight in 896318, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.625902 = idf(docFreq=10, maxDocs=1231567)\n    0.3125 = fieldNorm(doc=896318)\n&quot;,
+  &quot;File #9&quot;: &quot;\n3.9455943 = weight(title:scissor in 1037733) [ClassicSimilarity], result of:\n  3.9455943 = fieldWeight in 1037733, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.625902 = idf(docFreq=10, maxDocs=1231567)\n    0.3125 = fieldNorm(doc=1037733)\n&quot;,
+  &quot;File #10&quot;: &quot;\n3.1564755 = weight(title:scissor in 1045578) [ClassicSimilarity], result of:\n  3.1564755 = fieldWeight in 1045578, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.625902 = idf(docFreq=10, maxDocs=1231567)\n    0.25 = fieldNorm(doc=1045578)\n&quot;
+},
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And now the fifth result has become the sixth result:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&quot;explain&quot;: {
+  &quot;File #1&quot;: &quot;\n6.269446 = weight(title:scissor in 495641) [ClassicSimilarity], result of:\n  6.269446 = fieldWeight in 495641, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.538892 = idf(docFreq=11, maxDocs=1231568)\n    0.5 = fieldNorm(doc=495641)\n&quot;,
+  &quot;File #2&quot;: &quot;\n5.485765 = weight(title:scissor in 984389) [ClassicSimilarity], result of:\n  5.485765 = fieldWeight in 984389, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.538892 = idf(docFreq=11, maxDocs=1231568)\n    0.4375 = fieldNorm(doc=984389)\n&quot;,
+  &quot;File #3&quot;: &quot;\n5.485765 = weight(title:scissor in 1098172) [ClassicSimilarity], result of:\n  5.485765 = fieldWeight in 1098172, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.538892 = idf(docFreq=11, maxDocs=1231568)\n    0.4375 = fieldNorm(doc=1098172)\n&quot;,
+  &quot;File #4&quot;: &quot;\n4.7020845 = weight(title:scissor in 901186) [ClassicSimilarity], result of:\n  4.7020845 = fieldWeight in 901186, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.538892 = idf(docFreq=11, maxDocs=1231568)\n    0.375 = fieldNorm(doc=901186)\n&quot;,
+  &quot;File #6&quot;: &quot;\n4.7020845 = weight(title:scissor in 1044468) [ClassicSimilarity], result of:\n  4.7020845 = fieldWeight in 1044468, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.538892 = idf(docFreq=11, maxDocs=1231568)\n    0.375 = fieldNorm(doc=1044468)\n&quot;,
+  &quot;File #5&quot;: &quot;\n4.7020845 = weight(title:scissor in 0) [ClassicSimilarity], result of:\n  4.7020845 = fieldWeight in 0, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.538892 = idf(docFreq=11, maxDocs=1231568)\n    0.375 = fieldNorm(doc=0)\n&quot;,
+  &quot;File #7&quot;: &quot;\n4.4331675 = weight(title:scissor in 972468) [ClassicSimilarity], result of:\n  4.4331675 = fieldWeight in 972468, product of:\n    1.4142135 = tf(freq=2.0), with freq of:\n      2.0 = termFreq=2.0\n    12.538892 = idf(docFreq=11, maxDocs=1231568)\n    0.25 = fieldNorm(doc=972468)\n&quot;,
+  &quot;File #8&quot;: &quot;\n3.9184036 = weight(title:scissor in 896318) [ClassicSimilarity], result of:\n  3.9184036 = fieldWeight in 896318, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.538892 = idf(docFreq=11, maxDocs=1231568)\n    0.3125 = fieldNorm(doc=896318)\n&quot;,
+  &quot;File #9&quot;: &quot;\n3.9184036 = weight(title:scissor in 1037733) [ClassicSimilarity], result of:\n  3.9184036 = fieldWeight in 1037733, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.538892 = idf(docFreq=11, maxDocs=1231568)\n    0.3125 = fieldNorm(doc=1037733)\n&quot;,
+  &quot;File #10&quot;: &quot;\n3.134723 = weight(title:scissor in 1045578) [ClassicSimilarity], result of:\n  3.134723 = fieldWeight in 1045578, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.538892 = idf(docFreq=11, maxDocs=1231568)\n    0.25 = fieldNorm(doc=1045578)\n&quot;
+},
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Specifically, the before/after of the result in question:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&quot;File #5&quot;: &quot;\n4.7347136 = weight(title:scissor in 1037808) [ClassicSimilarity], result of:\n  4.7347136 = fieldWeight in 1037808, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.625902 = idf(docFreq=10, maxDocs=1231567)\n    0.375 = fieldNorm(doc=1037808)\n&quot;,
+
+&quot;File #5&quot;: &quot;\n4.7020845 = weight(title:scissor in 0) [ClassicSimilarity], result of:\n  4.7020845 = fieldWeight in 0, product of:\n    1.0 = tf(freq=1.0), with freq of:\n      1.0 = termFreq=1.0\n    12.538892 = idf(docFreq=11, maxDocs=1231568)\n    0.375 = fieldNorm(doc=0)\n&quot;,
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Any assistance in explaining to me what&#39;s happening here would be greatly appreciated. I&#39;m at a loss as to why this is happening.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46328025</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Not able to see copyField in Solr query results</title>
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+        <author>
+            <name>dev ツ</name>
+            <uri>https://stackoverflow.com/users/3929393</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46328025/not-able-to-see-copyfield-in-solr-query-results" />
+        <published>2017-09-20T17:10:03Z</published>
+        <updated>2017-09-20T17:31:05Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;&lt;strong&gt;Changes in &lt;code&gt;managed-scehma&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;field name=&quot;aName&quot; type=&quot;strings&quot;/&amp;gt;
+&amp;lt;field name=&quot;bName&quot; type=&quot;strings&quot;/&amp;gt;
+&amp;lt;field name=&quot;cName&quot; type=&quot;strings&quot;/&amp;gt;
+&amp;lt;field name=&quot;dName&quot; type=&quot;strings&quot;/&amp;gt;
+
+&amp;lt;field name=&quot;autocomplete&quot; type=&quot;text_general&quot; indexed=&quot;true&quot; stored=&quot;true&quot; multiValued=&quot;true&quot; /&amp;gt;
+
+&amp;lt;copyField source=&quot;aName&quot; dest=&quot;autocomplete&quot;/&amp;gt;
+&amp;lt;copyField source=&quot;bName&quot; dest=&quot;autocomplete&quot;/&amp;gt; 
+&amp;lt;copyField source=&quot;cName&quot; dest=&quot;autocomplete&quot;/&amp;gt; 
+&amp;lt;copyField source=&quot;dName&quot; dest=&quot;autocomplete&quot;/&amp;gt; 
+
+&amp;lt;fieldType name=&quot;strings&quot; class=&quot;solr.StrField&quot; sortMissingLast=&quot;true&quot; docValues=&quot;true&quot; multiValued=&quot;true&quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;While querying in Solr UI, I am not seeing &lt;code&gt;autocomplete&lt;/code&gt; field after restarting solr. What am I missing?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46328219</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Facing searching issue in Solr I want to display matching record on the Top</title>
+            <category scheme="https://stackoverflow.com/tags" term="apache" />
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="lucene" />
+        <author>
+            <name>Nouman Khan</name>
+            <uri>https://stackoverflow.com/users/3559306</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46328219/facing-searching-issue-in-solr-i-want-to-display-matching-record-on-the-top" />
+        <published>2017-09-20T17:21:25Z</published>
+        <updated>2017-09-20T17:21:25Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am working on Smart Search and facing issue in searching my desired data are not display on Top I want to display left most data on top ,as display show in image facing issue &lt;a href=&quot;https://i.stack.imgur.com/Kxnja.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;enter image description here&lt;/a&gt;
+. Data has searched accurately but I want to display on Top with left most . 
+ &lt;a href=&quot;https://i.stack.imgur.com/5d2cG.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;enter image description here&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46327224</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Solr search like algolia</title>
+            <category scheme="https://stackoverflow.com/tags" term="search" />
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="algolia" />
+        <author>
+            <name>Rafael</name>
+            <uri>https://stackoverflow.com/users/1809922</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46327224/solr-search-like-algolia" />
+        <published>2017-09-20T16:25:37Z</published>
+        <updated>2017-09-20T16:25:37Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Hi i need help with solr&lt;/p&gt;
+
+&lt;p&gt;I like to create a field in &lt;strong&gt;SOLR&lt;/strong&gt; with the same behavior of &lt;strong&gt;algolia&lt;/strong&gt; default field.&lt;/p&gt;
+
+&lt;p&gt;Example with the string:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Volkswagen Passat 2017&lt;/p&gt;
+  
+  &lt;p&gt;SOLR by default: search for Volkswagen OR Passat &lt;/p&gt;
+  
+  &lt;p&gt;ALGOLIA by default search for Volkswagen AND Passat&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And i think algolia search for letter by letter.&lt;/p&gt;
+
+&lt;p&gt;Can I make the same behavior ? I dont know who to copy the &lt;strong&gt;algolia&lt;/strong&gt; default behavior to &lt;strong&gt;SOLR&lt;/strong&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46310475</id>
+        <re:rank scheme="https://stackoverflow.com">-2</re:rank>
+        <title type="text">Is there any documentation or guide for copying / pasting (cloning and restoring) Alfresco Community ECM?</title>
+            <category scheme="https://stackoverflow.com/tags" term="postgresql" />
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="alfresco" />
+            <category scheme="https://stackoverflow.com/tags" term="alfresco-share" />
+        <author>
+            <name>Santiago Campuzano</name>
+            <uri>https://stackoverflow.com/users/8580975</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46310475/is-there-any-documentation-or-guide-for-copying-pasting-cloning-and-restoring" />
+        <published>2017-09-19T22:12:21Z</published>
+        <updated>2017-09-20T14:54:47Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Is there any documentation or guide for copying / pasting (cloning and restoring) an Alfresco Community - 5.1.0 installation with Alfresco, PostgreSQL and Solr4, from one Datacenter to another DC. with different IP addresses and hostnames.&lt;/p&gt;
+
+&lt;p&gt;We have 3 machines for this Alfresco installation:&lt;/p&gt;
+
+&lt;p&gt;alfrescodb:   Alfresco Community 5.1.0, PostgreSQL, Solr4 and NFS Server for sharing /opt/alfresco-community/alf_data. (Alfresco Documents and Solr Indexes).&lt;/p&gt;
+
+&lt;p&gt;alfresco1-2:  Alfresco Community 5.1.0 and NFS mounted /opt/alfresco-community/alf_data from alfrescodb.  These 2 nodes connect to the PgSQL database @ alfrescodb.&lt;/p&gt;
+
+&lt;p&gt;We need to copy/paste these 3 servers to a different Data Center, with different IP addresses, same hostnames.  &lt;/p&gt;
+
+&lt;p&gt;We have performed a regular clone/restore of the VM using Hypervisor Tools (KVM).&lt;/p&gt;
+
+&lt;p&gt;Everything works fine EXCEPT the document tagging feature, which is broken.  The weird thing is that this feature works only @ alfrescodb Server and does not work at all at alfresco1-2 servers.&lt;/p&gt;
+
+&lt;p&gt;Any similar experience?  Any recommendation for this migration?&lt;/p&gt;
+
+&lt;p&gt;Thanks in advance!&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/45331525</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Solr DataImportHandler issue with geo fields</title>
+            <category scheme="https://stackoverflow.com/tags" term="mysql" />
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="dataimporthandler" />
+            <category scheme="https://stackoverflow.com/tags" term="wkt" />
+        <author>
+            <name>dmaz99</name>
+            <uri>https://stackoverflow.com/users/2386325</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/45331525/solr-dataimporthandler-issue-with-geo-fields" />
+        <published>2017-07-26T15:35:58Z</published>
+        <updated>2017-09-20T14:49:08Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m running into an issue trying to import location data from MySQL using the DataImportHandler. A query for one of my subentities is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT [...] AS data, AsText(data_geo) AS data_geo FROM [table] WHERE [conditions]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I&#39;ve run the query and verified that the output looks correct:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&#39;128 Wall St, New Haven, CT 06511, USA&#39;, &#39;POINT(-72.92847010000003 41.31160920000001)&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;However, when I try to run an import, I get the following exception:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SolrWriter.upload(73) | Error creating document : SolrInputDocument(fields: [[...], data=128 Wall St, New Haven, CT 06511, USA, data_geo=[B@23bcddc0, _version_=1573858358394355712])
+org.apache.solr.common.SolrException: Point must be in &#39;lat, lon&#39; or &#39;x y&#39; format: [B@23bcddc0
+        at org.apache.solr.util.SpatialUtils.parsePointSolrException(SpatialUtils.java:113)
+        at org.apache.solr.schema.AbstractSpatialFieldType.parseShape(AbstractSpatialFieldType.java:239)
+        at org.apache.solr.schema.AbstractSpatialFieldType.createFields(AbstractSpatialFieldType.java:201)
+        at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:48)
+        at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:123)
+        at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:83)
+        at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:237)
+        at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:163)
+        at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:69)
+        at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:51)
+        at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:955)
+        at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:1110)
+        at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:706)
+        at org.apache.solr.update.processor.LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:104)
+        at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:71)
+        at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:259)
+        at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:524)
+        at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+        at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+        at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+        at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+        at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:480)
+        at org.apache.solr.handler.dataimport.DataImporter$1.run(DataImporter.java:461)
+Caused by: com.spatial4j.core.exception.InvalidShapeException: Point must be in &#39;lat, lon&#39; or &#39;x y&#39; format: [B@23bcddc0
+        at org.apache.solr.util.SpatialUtils.parsePoint(SpatialUtils.java:74)
+        at org.apache.solr.util.SpatialUtils.parsePointSolrException(SpatialUtils.java:108)
+        ... 22 more
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The relevant configuration in schema.xml is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;   &amp;lt;field name=&quot;data_geo&quot; type=&quot;location_rpt&quot; indexed=&quot;true&quot; stored=&quot;true&quot; multiValued=&quot;false&quot; /&amp;gt;
+
+   &amp;lt;fieldType name=&quot;location_rpt&quot; class=&quot;solr.SpatialRecursivePrefixTreeFieldType&quot;
+        spatialContextFactory=&quot;com.spatial4j.core.context.jts.JtsSpatialContextFactory&quot;
+        autoIndex=&quot;true&quot;
+        geo=&quot;true&quot;
+        distErrPct=&quot;0.025&quot;
+        maxDistErr=&quot;0.001&quot;
+        distanceUnits=&quot;kilometers&quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And I&#39;m running Solr 5.2.1&lt;/p&gt;
+
+&lt;p&gt;Any idea why it&#39;s trying to import the geo field using what appears to be a Java object hash?&lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46324579</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Unable to retrieve document score using spring data solr</title>
+            <category scheme="https://stackoverflow.com/tags" term="spring" />
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+        <author>
+            <name>Imad Alsous</name>
+            <uri>https://stackoverflow.com/users/4597708</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46324579/unable-to-retrieve-document-score-using-spring-data-solr" />
+        <published>2017-09-20T14:19:24Z</published>
+        <updated>2017-09-20T14:19:24Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I followed the advice posted in the following post:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/20332197/how-to-return-distance-and-score-in-spatial-search-using-spring-data-solr&quot;&gt;How to return distance and score in spatial search using spring-data-solr&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Per the post advice:
+1) I added the following to my PartyDocument:
+    @Indexed(value = &quot;score&quot;, readonly = true)
+    private Float score;&lt;/p&gt;
+
+&lt;p&gt;2) Added the following in my repository
+        search.addProjectionOnField(&quot;*&quot;);
+        search.addProjectionOnField(&quot;score&quot;);&lt;/p&gt;
+
+&lt;p&gt;When I examine the returned data from my call SolrTemplate call:
+Page results = solrTemplate.queryForPage(search, PartyDocument.class);&lt;/p&gt;
+
+&lt;p&gt;The results does contain the maximum score, however, when I examine the list of the returned documents non of the documents include a score value.
+Is there something else I am missing.  Any advice or pointer is appreciated.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46271392</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException ,on sor5.5.3</title>
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="solrj" />
+        <author>
+            <name>dean 王</name>
+            <uri>https://stackoverflow.com/users/8624540</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46271392/java-util-concurrent-executionexception-org-apache-solr-common-solrexception-o" />
+        <published>2017-09-18T03:57:55Z</published>
+        <updated>2017-09-20T13:10:07Z</updated>
+        <summary type="html">
+            
+
+            &lt;pre&gt;&lt;code&gt;2017-09-18 11:26:05.661 ERROR (coreContainerWorkExecutor-2-thread-1-processing-n:172.16.4.32:8983_solr) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be created
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [wyCluster_shard5_replica2]
+    at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+    at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+    at org.apache.solr.core.CoreContainer$2.run(CoreContainer.java:472)
+    at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+    at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$1.run(ExecutorUtil.java:210)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+    at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There take some ERROR in it .&lt;/p&gt;
+
+&lt;p&gt;When I start the Solr slave, it being down soon.&lt;/p&gt;
+
+&lt;p&gt;It uses zookeeper.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46319621</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Can we index in Solr single core data from two different formats i.e. from csv and text?</title>
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="full-text-search" />
+            <category scheme="https://stackoverflow.com/tags" term="solrj" />
+        <author>
+            <name>Shah Khalid</name>
+            <uri>https://stackoverflow.com/users/8244219</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46319621/can-we-index-in-solr-single-core-data-from-two-different-formats-i-e-from-csv-a" />
+        <published>2017-09-20T10:27:51Z</published>
+        <updated>2017-09-20T13:07:56Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have data in two formates CSV and TEXT. &lt;/p&gt;
+
+&lt;p&gt;1) CSV file contains metadata. i.e. ModifyScore, Size, fileName etc.     &lt;/p&gt;
+
+&lt;p&gt;2) actual text are in Text folders having files like a.txt, b.txt etc. &lt;/p&gt;
+
+&lt;p&gt;Please is it possible to index such data in Solr in a single core through DIH or another possible way?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46297256</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to update the existing field of solr index using java?</title>
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="solrj" />
+        <author>
+            <name>Shah Khalid</name>
+            <uri>https://stackoverflow.com/users/8244219</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46297256/how-to-update-the-existing-field-of-solr-index-using-java" />
+        <published>2017-09-19T09:50:54Z</published>
+        <updated>2017-09-20T12:55:38Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have a Solr index in a core having 3000 documents. &lt;/p&gt;
+
+&lt;p&gt;I want to modify the value of a single field in the entire core based on unique key PaperID. &lt;/p&gt;
+
+&lt;p&gt;I&#39;m using the following java code but instead of updating the existing value it adds new documents.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if (solrDocument.get(&quot;PaperID&quot;).equals(solrDocument2.get(&quot;PaperID&quot;))) {
+
+    String Mscore = (String) solrDocument.get(&quot;ID&quot;);
+    String ModifyScore = (String) solrDocument.get(&quot;Author&quot;);
+
+    //solrDocument.setField(&quot;ID&quot;, ModifyScore);
+    //update the field
+    System.out.println(Mscore);
+    System.out.println(ModifyScore);
+    System.out.println(solrDocument2.get(&quot;Mscore&quot;) + &quot;\n&quot;);
+
+    SolrInputDocument sid = new SolrInputDocument();
+
+    Map&amp;lt;String, Object&amp;gt; fieldModifier = new HashMap&amp;lt;String, Object&amp;gt;(1);
+
+    fieldModifier.put(&quot;set&quot;, ModifyScore);
+
+    sid.setField(&quot;ID&quot;, fieldModifier);
+
+    //solr.add(sid);
+    solr.commit();
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;can anyone guide me accordingly...Best Regards  &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46321043</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to restrict solr to suggest records after 3 letters</title>
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+        <author>
+            <name>dev ツ</name>
+            <uri>https://stackoverflow.com/users/3929393</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46321043/how-to-restrict-solr-to-suggest-records-after-3-letters" />
+        <published>2017-09-20T11:38:08Z</published>
+        <updated>2017-09-20T12:16:02Z</updated>
+        <summary type="html">
+            
+
+            &lt;ol&gt;
+&lt;li&gt;List item&lt;/li&gt;
+&lt;li&gt;Solr version - 6.6.0&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I am adding a new field in the documents say &quot;autocomplete&quot; and copying data from other relevant keys.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Changes in &lt;code&gt;schema.xml&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;field name=&quot;autocomplete&quot; type=&quot;text_general&quot; indexed=&quot;true&quot; stored=&quot;true&quot;
+multiValued=&quot;true&quot; /&amp;gt;
+
+&amp;lt;copyField source=&quot;a&quot; dest=&quot;autocomplete&quot;/&amp;gt;
+&amp;lt;copyField source=&quot;b&quot; dest=&quot;autocomplete&quot;/&amp;gt;
+&amp;lt;copyField source=&quot;c&quot; dest=&quot;autocomplete&quot;/&amp;gt;
+&amp;lt;copyField source=&quot;d&quot; dest=&quot;autocomplete&quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Changes in suggester of &lt;code&gt;solrconfig.xml&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  &amp;lt;searchComponent name=&quot;suggest&quot; class=&quot;solr.SuggestComponent&quot;&amp;gt;
+    &amp;lt;lst name=&quot;suggester&quot;&amp;gt;
+      &amp;lt;str name=&quot;name&quot;&amp;gt;infixSuggester&amp;lt;/str&amp;gt;
+      &amp;lt;str name=&quot;lookupImpl&quot;&amp;gt;AnalyzingInfixLookupFactory&amp;lt;/str&amp;gt;  
+      &amp;lt;str name=&quot;dictionaryImpl&quot;&amp;gt;DocumentDictionaryFactory&amp;lt;/str&amp;gt;
+      &amp;lt;str name=&quot;field&quot;&amp;gt;autocomplete&amp;lt;/str&amp;gt;
+       &amp;lt;str name=&quot;contextField&quot;&amp;gt;type&amp;lt;/str&amp;gt;
+      &amp;lt;str name=&quot;suggestAnalyzerFieldType&quot;&amp;gt;text_general&amp;lt;/str&amp;gt;
+      &amp;lt;str name=&quot;buildOnStartup&quot;&amp;gt;false&amp;lt;/str&amp;gt;
+    &amp;lt;/lst&amp;gt;
+  &amp;lt;/searchComponent&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I can query over it and use context filter as well. &lt;/p&gt;
+
+&lt;p&gt;Can I restrict it to show records only after 3 letters input?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/37826849</id>
+        <re:rank scheme="https://stackoverflow.com">2</re:rank>
+        <title type="text">Upgrade an Apache Solr index from 1.x to 5.x (or later versions)</title>
+            <category scheme="https://stackoverflow.com/tags" term="apache" />
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="lucene" />
+            <category scheme="https://stackoverflow.com/tags" term="solrj" />
+        <author>
+            <name>Monti Chandra</name>
+            <uri>https://stackoverflow.com/users/3598367</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/37826849/upgrade-an-apache-solr-index-from-1-x-to-5-x-or-later-versions" />
+        <published>2016-06-15T05:30:13Z</published>
+        <updated>2017-09-20T11:29:38Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am migrating from solr 1.0 to 5.3.0. I have copied all data directories to newer core data directories but i am getting the follwoing exception on starting :&lt;/p&gt;
+
+&lt;pre&gt;
+org.apache.lucene.index.IndexFormatTooOldException: Format version is not supported (resource BufferedChecksumIndexInput(MMapIndexInput(path=&quot;/Resume/resume/data/index/segments_1a9&quot;))): -9 
+(needs to be between 1071082519 and 1071082519). This version of Lucene only supports indexes created with release 4.0 and later.
+
+&lt;/pre&gt;
+
+&lt;p&gt;Can any one tell to the detail process to to covert solr 1.x index data to 4.0?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46274741</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Solr spellchecking nor returning results for indexes larger than 10k items</title>
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="spell-checking" />
+            <category scheme="https://stackoverflow.com/tags" term="solr6" />
+        <author>
+            <name>picci</name>
+            <uri>https://stackoverflow.com/users/8625414</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46274741/solr-spellchecking-nor-returning-results-for-indexes-larger-than-10k-items" />
+        <published>2017-09-18T08:25:26Z</published>
+        <updated>2017-09-20T09:38:43Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have a Solr core (Solr version 6.4.1) where I&#39;m also using a &lt;a href=&quot;https://lucene.apache.org/solr/guide/6_6/spell-checking.html#spell-checking&quot; rel=&quot;nofollow noreferrer&quot;&gt;spellcheck component&lt;/a&gt;.
+Problem is, as long as I have less than 30k items my spellchecker works fine. Increasing the number of docs to 30k or more causes the spellcheck not to return any result.
+I&#39;m aware of parameters in solrconfig.xml file, such as &lt;em&gt;maxQueryFrequency&lt;/em&gt; or &lt;em&gt;thresholdTokenFrequency&lt;/em&gt;, but altering them did not solve the problem.&lt;/p&gt;
+
+&lt;p&gt;I also read these: &lt;a href=&quot;https://stackoverflow.com/questions/19994746/apache-solr-search-is-not-returning-result-for-large-document-indexed&quot;&gt;Apache Solr : Search is not returning result for large document indexed&lt;/a&gt;, &lt;a href=&quot;https://stackoverflow.com/questions/11110352/solr-spellchecker-not-returning-any-results&quot;&gt;Solr spellchecker not returning any results&lt;/a&gt;, &lt;a href=&quot;https://stackoverflow.com/questions/6653186/solr-suggester-not-returning-any-results/6859478#6859478&quot;&gt;solr suggester not returning any results&lt;/a&gt; and &lt;a href=&quot;https://stackoverflow.com/questions/46224033/solr-spellcheckin-randomly-working&quot;&gt;Solr spellcheckin randomly working&lt;/a&gt;, but they didn&#39;t help neither.&lt;/p&gt;
+
+&lt;p&gt;These are the relevant parts in &lt;em&gt;solrconfig.xml&lt;/em&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;searchComponent name=&quot;spellcheck&quot; class=&quot;solr.SpellCheckComponent&quot;&amp;gt;
+  &amp;lt;str name=&quot;queryAnalyzerFieldType&quot;&amp;gt;text_general&amp;lt;/str&amp;gt;
+  &amp;lt;lst name=&quot;spellchecker&quot;&amp;gt;
+    &amp;lt;str name=&quot;name&quot;&amp;gt;default&amp;lt;/str&amp;gt;
+    &amp;lt;str name=&quot;field&quot;&amp;gt;_spellcheck_&amp;lt;/str&amp;gt;
+    &amp;lt;str name=&quot;classname&quot;&amp;gt;solr.DirectSolrSpellChecker&amp;lt;/str&amp;gt;
+    &amp;lt;str name=&quot;distanceMeasure&quot;&amp;gt;internal&amp;lt;/str&amp;gt;
+    &amp;lt;float name=&quot;accuracy&quot;&amp;gt;0.5&amp;lt;/float&amp;gt;
+    &amp;lt;int name=&quot;maxEdits&quot;&amp;gt;2&amp;lt;/int&amp;gt;
+    &amp;lt;int name=&quot;minPrefix&quot;&amp;gt;1&amp;lt;/int&amp;gt;
+    &amp;lt;int name=&quot;maxInspections&quot;&amp;gt;5&amp;lt;/int&amp;gt;
+    &amp;lt;int name=&quot;minQueryLength&quot;&amp;gt;4&amp;lt;/int&amp;gt;
+    &amp;lt;float name=&quot;maxQueryFrequency&quot;&amp;gt;0.1&amp;lt;/float&amp;gt;
+    &amp;lt;float name=&quot;thresholdTokenFrequency&quot;&amp;gt;.0000001&amp;lt;/float&amp;gt;
+  &amp;lt;/lst&amp;gt;
+&amp;lt;/searchComponent&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and, in my request handler:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;bool name=&quot;spellcheck&quot;&amp;gt;true&amp;lt;/bool&amp;gt;
+&amp;lt;str name=&quot;spellcheck.dictionary&quot;&amp;gt;default&amp;lt;/str&amp;gt;
+&amp;lt;str name=&quot;spellcheck.extendedResults&quot;&amp;gt;false&amp;lt;/str&amp;gt;
+&amp;lt;str name=&quot;spellcheck.count&quot;&amp;gt;5&amp;lt;/str&amp;gt;
+&amp;lt;str name=&quot;spellcheck.alternativeTermCount&quot;&amp;gt;2&amp;lt;/str&amp;gt;
+&amp;lt;str name=&quot;spellcheck.maxResultsForSuggest&quot;&amp;gt;5&amp;lt;/str&amp;gt;
+&amp;lt;str name=&quot;spellcheck.collate&quot;&amp;gt;true&amp;lt;/str&amp;gt;
+&amp;lt;str name=&quot;spellcheck.collateExtendedResults&quot;&amp;gt;true&amp;lt;/str&amp;gt;
+&amp;lt;str name=&quot;spellcheck.maxCollationTries&quot;&amp;gt;5&amp;lt;/str&amp;gt;
+&amp;lt;str name=&quot;spellcheck.maxCollations&quot;&amp;gt;3&amp;lt;/str&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;_spellcheck_&lt;/em&gt; is a CopyField (source=&quot;*&quot;), indexed as text_general which is defined as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;fieldType name=&quot;text_general&quot; class=&quot;solr.TextField&quot; &amp;gt;
+  &amp;lt;analyzer type=&quot;index&quot;&amp;gt;
+    &amp;lt;charFilter class=&quot;solr.HTMLStripCharFilterFactory&quot; /&amp;gt;
+    &amp;lt;tokenizer class=&quot;solr.ClassicTokenizerFactory&quot; /&amp;gt;
+    &amp;lt;filter class=&quot;solr.ClassicFilterFactory&quot; /&amp;gt;
+    &amp;lt;filter class=&quot;solr.ASCIIFoldingFilterFactory&quot; /&amp;gt;
+    &amp;lt;filter class=&quot;solr.LowerCaseFilterFactory&quot; /&amp;gt;
+    &amp;lt;filter class=&quot;solr.TrimFilterFactory&quot; /&amp;gt;
+    &amp;lt;filter class=&quot;solr.HyphenatedWordsFilterFactory&quot; /&amp;gt;
+  &amp;lt;/analyzer&amp;gt;
+  &amp;lt;analyzer type=&quot;query&quot;&amp;gt;
+    &amp;lt;charFilter class=&quot;solr.HTMLStripCharFilterFactory&quot; /&amp;gt;
+    &amp;lt;tokenizer class=&quot;solr.ClassicTokenizerFactory&quot; /&amp;gt;
+    &amp;lt;filter class=&quot;solr.ClassicFilterFactory&quot; /&amp;gt;
+    &amp;lt;filter class=&quot;solr.ASCIIFoldingFilterFactory&quot; /&amp;gt;
+    &amp;lt;filter class=&quot;solr.LowerCaseFilterFactory&quot; /&amp;gt;
+    &amp;lt;filter class=&quot;solr.TrimFilterFactory&quot; /&amp;gt;
+    &amp;lt;filter class=&quot;solr.HyphenatedWordsFilterFactory&quot; /&amp;gt;
+  &amp;lt;/analyzer&amp;gt;
+&amp;lt;/fieldType&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Any advice?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/38681590</id>
+        <re:rank scheme="https://stackoverflow.com">1</re:rank>
+        <title type="text">Architectural Design -Building a real time free text search functionality in an application?</title>
+            <category scheme="https://stackoverflow.com/tags" term="elasticsearch" />
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="lucene" />
+        <author>
+            <name>Abhimanyu</name>
+            <uri>https://stackoverflow.com/users/4302596</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/38681590/architectural-design-building-a-real-time-free-text-search-functionality-in-an" />
+        <published>2016-07-31T07:01:31Z</published>
+        <updated>2017-09-20T07:11:01Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am working on an application which is basically event management kind of application. Where user can post different types of events. Events can be short noticed events like a user throwing a birthday party in next 2 hours or pre planned events like marathon etc (This is just a dummy example).
+Now the requirement is this that other user when search through free text search they will able to get both kind of results . The search will be more like linkedIn search , other than event there are other categories also.&lt;/p&gt;
+
+&lt;p&gt;I was thinking of using ElasticSearch or Solr. but both of them are lucene based search engine. When I will be writing a lot of data in real time to these search engines , the data will be written to cache and then periodically flush out to disk in different segments.
+To optimize the search performance lucene based engine try to co-locate the data using segmentation process. In frequent write case these process become frequent and lot of resources will be consumed by this and the search performance will be degraded finally.
+&lt;a href=&quot;https://www.elastic.co/guide/en/elasticsearch/guide/current/indexing-performance.html&quot; rel=&quot;nofollow&quot;&gt;https://www.elastic.co/guide/en/elasticsearch/guide/current/indexing-performance.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Is there any way by which I could achive real time free text search without costing much of performance in segmentation. Please suggest any architectural design which will best suit in this scenario&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46314407</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Solr connect to mysql,SQLException</title>
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+        <author>
+            <name>Waber.P</name>
+            <uri>https://stackoverflow.com/users/8638784</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46314407/solr-connect-to-mysql-sqlexception" />
+        <published>2017-09-20T06:05:20Z</published>
+        <updated>2017-09-20T06:50:58Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I use solr connect to mysql
+when i choose dataimport and select entity to execute,
+the logging show that
+EntityProcessorBase getNext() failed for query &quot;select * from goods&#39;:org.apache.solr.handler.dataimport.DataImportHandlerException:java.sql.SQLException:Operation not allowed after ResultSet closed.
+Has anyone ever had a similar problem?
+&lt;a href=&quot;https://i.stack.imgur.com/jDoJI.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;enter image description here&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/28589942</id>
+        <re:rank scheme="https://stackoverflow.com">7</re:rank>
+        <title type="text">Delete/remove Solr configuration from ZooKeeper using zkcli?</title>
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="apache-zookeeper" />
+        <author>
+            <name>user2029783</name>
+            <uri>https://stackoverflow.com/users/2029783</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/28589942/delete-remove-solr-configuration-from-zookeeper-using-zkcli" />
+        <published>2015-02-18T17:28:03Z</published>
+        <updated>2017-09-20T04:38:25Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;We have some old Solr configs in ZK and that we need to cleanup/delete.  &lt;/p&gt;
+
+&lt;p&gt;The configs are at /configs/AAA, /configs/BBB, etc.  (There are other configs under /configs as well.)  &lt;/p&gt;
+
+&lt;p&gt;The Solr zkcli.sh script and docs provide no direction for deleting a config.  The only thing that looks obvious is the &quot;clear&quot; parameter, but the docs and zkcli only give the example &lt;code&gt;-cmd clear /solr&lt;/code&gt;.  I thought &lt;code&gt;./zkcli -cmd clear /configs/AAA&lt;/code&gt; might work, but without being able to find much information on the internet, I&#39;m leery of inadvertently deleting the wrong thing.&lt;/p&gt;
+
+&lt;p&gt;If I want to delete the old configs, do I use clear, and if so, is the path parameter /configs/?&lt;/p&gt;
+
+&lt;p&gt;Thanks&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/44980178</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Solr OR query on a text field</title>
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="lucene" />
+            <category scheme="https://stackoverflow.com/tags" term="solrcloud" />
+        <author>
+            <name>Vasily802</name>
+            <uri>https://stackoverflow.com/users/2340227</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/44980178/solr-or-query-on-a-text-field" />
+        <published>2017-07-07T21:53:15Z</published>
+        <updated>2017-09-19T23:28:10Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;How to perform a simple query on a text field with an OR condition? Something like &lt;code&gt;name:ABC OR name:XYZ&lt;/code&gt; so the resulting set would contain only those docs where name is exactly &quot;XYZ&quot; or &quot;ABC&quot;
+Dug tons of manuals, cannot figure this out.
+I use Solr 5.5.0&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Update&lt;/em&gt;&lt;/strong&gt;: Upgraded to Solr 6.6.0, still cannot figure it out. Below are illustrations to demonstrate my issue:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;This works:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/E5yGx.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/E5yGx.png&quot; alt=&quot;works&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;This works too:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/zahyo.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/zahyo.png&quot; alt=&quot;works too&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;This still works:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/AXhr8.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/AXhr8.png&quot; alt=&quot;still works&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;But this does not! Omg why!?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/QjCEV.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/QjCEV.png&quot; alt=&quot;does not work omg why&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46308430</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Solr fq parameter over an array of objects</title>
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+        <author>
+            <name>computeriscomputer</name>
+            <uri>https://stackoverflow.com/users/5347962</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46308430/solr-fq-parameter-over-an-array-of-objects" />
+        <published>2017-09-19T19:31:48Z</published>
+        <updated>2017-09-19T19:48:22Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am currently trying to query over the following data structure:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&#39;id&#39;: &#39;test&#39;,
+&quot;user&quot;: &#39;test,
+&quot;extras&quot;:
+
+[{&#39;paperName&#39; : &#39;test&#39;,
+&#39;key&#39;: &#39;key1&#39;,
+&#39;value&#39;: &#39;value1&#39;,},
+
+{&#39;paperName&#39; : &#39;test2&#39;,
+&#39;key&#39;: &#39;key2&#39;,
+&#39;value&#39;: &#39;value2&#39;,}]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Currently in my fq parameter if I wanted to just wanted to search for a specific user I could just pass &#39; &lt;code&gt;id:&quot;test&quot;&lt;/code&gt;&#39; into my fq parameter to filter out the rest. My question is how  would I structure my fq input 
+if I wanted to only filter for &lt;code&gt;key1&lt;/code&gt; with a value of &lt;code&gt;value1&lt;/code&gt; in the extras object array?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/46307544</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Symfony with NelmioSolariumBundle - how to log http 500 errors</title>
+            <category scheme="https://stackoverflow.com/tags" term="symfony" />
+            <category scheme="https://stackoverflow.com/tags" term="logging" />
+            <category scheme="https://stackoverflow.com/tags" term="solr" />
+            <category scheme="https://stackoverflow.com/tags" term="solarium" />
+            <category scheme="https://stackoverflow.com/tags" term="nelmio" />
+        <author>
+            <name>milan74sa</name>
+            <uri>https://stackoverflow.com/users/7261299</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/46307544/symfony-with-nelmiosolariumbundle-how-to-log-http-500-errors" />
+        <published>2017-09-19T18:33:31Z</published>
+        <updated>2017-09-19T18:33:31Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;how can I configure or what to do if I want to log using Nelmiosolariumbundle under Symfony when I get e.g. http 500 Error.&lt;/p&gt;
+
+&lt;p&gt;I have in prod.log message of error. But there is missing query to SOLR - so I can&#39;t configure what was requested and how to fix it.&lt;/p&gt;
+
+&lt;p&gt;Can anybody provide advice please ?&lt;/p&gt;
+
+&lt;p&gt;thank you
+Milan&lt;/p&gt;
+
+        </summary>
+    </entry>
+</feed>
