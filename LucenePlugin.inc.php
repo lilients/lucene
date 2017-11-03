@@ -405,32 +405,32 @@ class LucenePlugin extends GenericPlugin {
 		$totalResults =& $params[9]; // need to use reference
 		$error =& $params[10]; // need to use reference
 
-	//	$debugFile = fopen("debug.txt", "a");
-	//	fwrite($debugFile, print_r($keywords, TRUE));
+		$debugFile = fopen("debug.txt", "a");
+	//	fwrite($debugFile, print_r($params, TRUE));
 
 		// Instantiate a search request.
 		$searchRequest = new SolrSearchRequest();
 		$searchRequest->setJournal($journal);
-		$searchRequest->setFromDate($fromDate);
-		$searchRequest->setToDate($toDate);
-		$searchRequest->setOrderBy($orderBy);
-		$searchRequest->setOrderDir($orderDir == 'asc' ? true : false);
-		$searchRequest->setPage($page);
-		$searchRequest->setItemsPerPage($itemsPerPage);
+	//	$searchRequest->setFromDate($fromDate);
+	//	$searchRequest->setToDate($toDate);
+	//	$searchRequest->setOrderBy($orderBy);
+	//	$searchRequest->setOrderDir($orderDir == 'asc' ? true : false);
+	//	$searchRequest->setPage($page);
+	//	$searchRequest->setItemsPerPage($itemsPerPage);
 		$searchRequest->addQueryFromKeywords($keywords);
-		$searchRequest->setExcludedIds($exclude);
+	//	$searchRequest->setExcludedIds($exclude);
 
 		// Configure alternative spelling suggestions.
-		$spellcheck = (boolean)$this->getSetting(0, 'spellcheck');
+	/*	$spellcheck = (boolean)$this->getSetting(0, 'spellcheck');
 		$searchRequest->setSpellcheck($spellcheck);
-
+	*/
 		// Configure highlighting.
-		$highlighting = (boolean)$this->getSetting(0, 'highlighting');
+	/*	$highlighting = (boolean)$this->getSetting(0, 'highlighting');
 		$searchRequest->setHighlighting($highlighting);
-
+	*/
 		// Configure faceting.
 		// 1) Faceting will be disabled for filtered search categories.
-		$activeFilters = array_keys($searchRequest->getQuery());
+	/*	$activeFilters = array_keys($searchRequest->getQuery());
 		if (is_a($journal, 'Journal')) $activeFilters[] = 'journalTitle';
 		if (!empty($fromDate) || !empty($toDate)) $activeFilters[] = 'publicationDate';
 		// 2) Switch faceting on for enabled categories that have no
@@ -441,13 +441,13 @@ class LucenePlugin extends GenericPlugin {
 		// Configure custom ranking.
 		$customRanking = (boolean)$this->getSetting(0, 'customRanking');
 		if ($customRanking) {
-			$sectionDao = DAORegistry::getDAO('SectionDAO'); /* @var $sectionDao SectionDAO */
+			$sectionDao = DAORegistry::getDAO('SectionDAO'); /* @var $sectionDao SectionDAO 
 			if (is_a($journal, 'Journal')) {
 				$sections = $sectionDao->getByJournalId($journal->getId());
 			} else {
 				$sections = $sectionDao->getAll();
 			}
-			while ($section = $sections->next()) { /* @var $sections DAOResultFactory */
+			while ($section = $sections->next()) { /* @var $sections DAOResultFactory 
 				$section = $sections->next();
 				$sectionBoost = (float)$section->getData('rankingBoost');
 				if ($sectionBoost != 1.0) {
@@ -467,11 +467,11 @@ class LucenePlugin extends GenericPlugin {
 			// normalized to values between 1.0 and 2.0.
 			$searchRequest->addBoostField('usageMetricAll');
 		}
-
+	*/
 		// Call the solr web service.
 		$solrWebService =& $this->getSolrWebService();
 		$result = $solrWebService->retrieveResults($searchRequest, $totalResults);
-		
+
 	//	$debugFile = fopen("debug.txt", "a");
 	//	fwrite($debugFile, print_r($result, TRUE));
 
@@ -606,9 +606,6 @@ class LucenePlugin extends GenericPlugin {
 	 */
 	function callbackRebuildIndex($hookName, $params) {
 		assert($hookName == 'ArticleSearchIndex::rebuildIndex');
-
-		$debugFile = fopen("debug.txt", "a");
-		fwrite($debugFile, print_r($params, TRUE));
 
 		// Unpack the parameters.
 		list($log, $journal, $switches) = $params;
@@ -944,9 +941,6 @@ class LucenePlugin extends GenericPlugin {
 		// Rebuilding the index can take a long time.
 		@set_time_limit(0);
 		$solrWebService = $this->getSolrWebService();
-
-		$debugFile = fopen("debug.txt", "a");
-		fwrite($debugFile, "solrWebService: ".print_r($solrWebService, TRUE));
 
 		if ($buildIndex) {
 			// If we got a journal instance then only re-index

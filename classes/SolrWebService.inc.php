@@ -318,12 +318,9 @@ class SolrWebService extends XmlWebService {
 		// Construct the main query.
 		$params = $this->_getSearchQueryParameters($searchRequest);
 
-	//	$debugFile = fopen("debug.txt", "a");
-	//	fwrite($debugFile, "retrieveResults");
-
 		// If we have no filters at all then return an
 		// empty result set.
-		if (!isset($params['q'])) return array();
+	/*	if (!isset($params['q'])) return array();
 
 		// Pagination.
 		$itemsPerPage = $searchRequest->getItemsPerPage();
@@ -408,14 +405,16 @@ class SolrWebService extends XmlWebService {
 			// Boost fields contain pre-calculated boost values.
 			$params['boost'][] = $boostField;
 		}
-
+	*/
 		// Make the search request.
 		$url = $this->_getSearchUrl();
+		$debugFile = fopen("debug.txt", "a");
+		fwrite($debugFile, "searchurl: ".$url);
+		fwrite($debugFile, print_r($params, TRUE));
+
 		$response = $this->_makeRequest($url, $params);
 
-		$debugFile = fopen("debug.txt", "a");
-	//	fwrite($debugFile, $url);
-	//	fwrite($debugFile, print_r($params, TRUE));
+		fwrite($debugFile, "response: ".print_r($response, TRUE));
 
 		// Did we get a result?
 		if (is_null($response)) return null;
@@ -906,8 +905,7 @@ class SolrWebService extends XmlWebService {
 	 */
 	function _getDihUrl() {
 //		$dihUrl = $this->_solrServer . $this->_solrCore . '/dih';
-	//	$dihUrl = $this->_solrSearchHandler . '/dataimport';
-		$dihUrl = 'localhost:8983/solr/testing/dataimport';
+		$dihUrl = $this->_solrSearchHandler . '/dataimport';
 		return $dihUrl;
 	}
 
@@ -917,6 +915,7 @@ class SolrWebService extends XmlWebService {
 	 */
 	function _getSearchUrl() {
 		$searchUrl = $this->_solrServer . $this->_solrCore . '/' . $this->_solrSearchHandler;
+		$searchUrl = $this->_solrSearchHandler . '/query';
 		return $searchUrl;
 	}
 
@@ -992,11 +991,6 @@ class SolrWebService extends XmlWebService {
 	 *  See _serviceMessage for more details about the error.
 	 */
 	function &_makeRequest($url, $params = array(), $method = 'GET') {
-
-		$debugFile = fopen("debug.txt", "a");
-		fwrite($debugFile, " _makeRequest");
-		fwrite($debugFile, " params: ". print_r($params, TRUE));
-
 		$webServiceRequest = new WebServiceRequest($url, $params, $method, $this->_useProxySettings);
 		if ($method == 'POST') {
 			$webServiceRequest->setHeader('Content-Type', 'text/xml; charset=utf-8');
@@ -1004,9 +998,6 @@ class SolrWebService extends XmlWebService {
 		$this->setReturnType(XSL_TRANSFORMER_DOCTYPE_DOM);
 		$response = $this->call($webServiceRequest);
 		$nullValue = null;
-
-		fwrite($debugFile, " webServiceRequest: ". print_r($webServiceRequest, TRUE));
-		fwrite($debugFile, " response: ". print_r($response, TRUE));
 
 		// Did we get a response at all?
 		if (!$response) {
@@ -1200,10 +1191,6 @@ class SolrWebService extends XmlWebService {
 	 *  for the given journal.
 	 */
 	function _indexingTransaction($sendXmlCallback, $batchSize = SOLR_INDEXING_MAX_BATCHSIZE, $journalId = null) {
-
-		$debugFile = fopen("debug.txt", "a");
-		fwrite($debugFile, " _indexingTransaction. ");
-
 		// Retrieve a batch of "changed" articles.
 		import('lib.pkp.classes.db.DBResultRange');
 		$range = new DBResultRange($batchSize);
@@ -1223,13 +1210,8 @@ class SolrWebService extends XmlWebService {
 		$numDeleted = null;
 		$articleXml = $this->_getArticleListXml($changedArticles, $totalCount, $numDeleted);
 
-
-		fwrite($debugFile, " articleXml: " . $articleXml. " ****** ");
-		fwrite($debugFile, " sendXmlCallback: ".print_r($sendXmlCallback, TRUE). "#####");
-
 		// Let the specific indexing implementation (pull or push)
 		// transfer the generated XML.
-		// TODO testing
 		$numProcessed = call_user_func_array($sendXmlCallback, array(&$articleXml, $batchCount, $numDeleted));
 
 		// Check error conditions.
@@ -1279,15 +1261,7 @@ class SolrWebService extends XmlWebService {
 		if ($batchCount > 0) {
 			// Make a POST request with all articles in this batch.
 			$url = $this->_getDihUrl() . '?command=full-import&clean=false';
-
-			$debugFile = fopen("debug.txt", "a");
-			fwrite($debugFile, " _pushIndexingCallback: ".$url);
-
 			$result = $this->_makeRequest($url, $articleXml, 'POST');
-
-		//	fwrite($debugFile, " articleXml: ".$articleXml);
-		//	fwrite($debugFile, " result: ".$result);
-
 			if (is_null($result)) return null;
 
 			// Retrieve the number of successfully indexed articles.
@@ -1781,6 +1755,11 @@ class SolrWebService extends XmlWebService {
 	 *  went wrong.
 	 */
 	function _getSearchQueryParameters(&$searchRequest) {
+
+		// TODO
+		$debugFile = fopen("debug.txt", "a");
+		fwrite($debugFile, "_getSearchQueryParameters.". print_r($searchRequest->getQuery(), TRUE));
+
 		// Pre-filter and translate query phrases.
 		$subQueries = array();
 		foreach($searchRequest->getQuery() as $fieldList => $searchPhrase) {
