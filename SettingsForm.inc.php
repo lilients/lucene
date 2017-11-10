@@ -47,13 +47,15 @@ class SettingsForm extends Form {
 		$this->setData('searchEndpoint', $plugin->getSetting($contextId, 'searchEndpoint'));
 		$this->setData('username', $plugin->getSetting($contextId, 'username'));
 		$this->setData('password', $plugin->getSetting($contextId, 'password'));
+		$this->setData('autosuggest', $plugin->getSetting($contextId, 'autosuggest'));
+		$this->setData('highlighting', $plugin->getSetting($contextId, 'highlighting'));
 	}
 
 	/**
 	 * Assign form data to user-submitted data.
 	 */
 	function readInputData() {
-		$this->readUserVars(array('searchEndpoint','username','password'));
+		$this->readUserVars(array('searchEndpoint','username','password', 'autosuggest', 'highlighting'));
 	}
 
 	/**
@@ -76,6 +78,8 @@ class SettingsForm extends Form {
 		$plugin->updateSetting($contextId, 'searchEndpoint', $this->getData('searchEndpoint'));
 		$plugin->updateSetting($contextId, 'username', $this->getData('username'));
 		$plugin->updateSetting($contextId, 'password', $this->getData('password'));
+		$plugin->updateSetting($contextId, 'autosuggest', $this->getData('autosuggest'));
+		$plugin->updateSetting($contextId, 'highlighting', $this->getData('highlighting'));
 	}
 }
 

@@ -102,10 +102,6 @@ class SolrWebService extends XmlWebService {
 		$this->_solrSearchHandler = array_pop($searchHandlerParts);
 		$this->_solrCore = array_pop($searchHandlerParts);
 		$this->_solrServer = implode('/', $searchHandlerParts) . '/';
-
-		fwrite($debugFile, "_solrSearchHandler: " . $this->_solrSearchHandler);
-		fwrite($debugFile, "core: " . $this->_solrCore);
-		fwrite($debugFile, "_solrServer: " . $this->_solrServer);
 */
 		// Set the installation ID.
 		assert(is_string($instId) && !empty($instId));
@@ -318,9 +314,8 @@ class SolrWebService extends XmlWebService {
 		// Construct the main query.
 		$params = $this->_getSearchQueryParameters($searchRequest);
 
-		// If we have no filters at all then return an
-		// empty result set.
-	/*	if (!isset($params['q'])) return array();
+		// If we have no filters at all then return an empty result set.
+		if (!isset($params['q'])) return array();
 
 		// Pagination.
 		$itemsPerPage = $searchRequest->getItemsPerPage();
@@ -405,16 +400,10 @@ class SolrWebService extends XmlWebService {
 			// Boost fields contain pre-calculated boost values.
 			$params['boost'][] = $boostField;
 		}
-	*/
+
 		// Make the search request.
 		$url = $this->_getSearchUrl();
-		$debugFile = fopen("debug.txt", "a");
-		fwrite($debugFile, "searchurl: ".$url);
-		fwrite($debugFile, print_r($params, TRUE));
-
 		$response = $this->_makeRequest($url, $params);
-
-		fwrite($debugFile, "response: ".print_r($response, TRUE));
 
 		// Did we get a result?
 		if (is_null($response)) return null;
@@ -458,16 +447,17 @@ class SolrWebService extends XmlWebService {
 
 			// Use the result order to "score" results. This
 			// will do relevance sorting and field sorting.
-			$score = $itemsPerPage - $resultIndex;
+	//		$score = $itemsPerPage - $resultIndex;
 
 			// Transform the article ID into an integer.
 			$articleId = $result['submission_id'];
-			if (strpos($articleId, $this->_instId . '-') !== 0) continue;
-			$articleId = substr($articleId, strlen($this->_instId . '-'));
-			if (!is_numeric($articleId)) continue;
+	//		if (strpos($articleId, $this->_instId . '-') !== 0) continue;
+	//		$articleId = substr($articleId, strlen($this->_instId . '-'));
+	//		if (!is_numeric($articleId)) continue;
 
 			// Store the result.
-			$scoredResults[$score] = (int)$articleId;
+	//		$scoredResults[$score] = (int)$articleId;
+			$scoredResults[$resultIndex] = (int)$articleId;
 		}
 
 		// Read alternative spelling suggestions (if any).
@@ -554,12 +544,12 @@ class SolrWebService extends XmlWebService {
 			}
 		}
 
-		return array(
+		return [
 			'scoredResults' => $scoredResults,
 			'spellingSuggestion' => $spellingSuggestion,
 			'highlightedArticles' => $highligthedArticles,
 			'facets' => $facets
-		);
+		];
 	}
 
 	/**
@@ -914,8 +904,8 @@ class SolrWebService extends XmlWebService {
 	 * @return string
 	 */
 	function _getSearchUrl() {
-		$searchUrl = $this->_solrServer . $this->_solrCore . '/' . $this->_solrSearchHandler;
-		$searchUrl = $this->_solrSearchHandler . '/query';
+	//	$searchUrl = $this->_solrServer . $this->_solrCore . '/' . $this->_solrSearchHandler;
+		$searchUrl = $this->_solrSearchHandler . '/select';
 		return $searchUrl;
 	}
 
@@ -1637,12 +1627,13 @@ class SolrWebService extends XmlWebService {
 	 */
 	function _setQuery($fieldList, $searchPhrase, $spellcheck = false) {
 		// Expand the field list to all locales and formats.
-		$fieldList = $this->_expandFieldList(explode('|', $fieldList));
+	//	$fieldList = $this->_expandFieldList(explode('|', $fieldList));
+		$fieldList = (explode('|', $fieldList));
 
 		// Add the subquery to the query parameters.
 		$params = array(
-			'defType' => 'edismax',
-			'qf' => $fieldList,
+		//	'defType' => 'edismax',
+		//	'qf' => $fieldList,
 			// NB: mm=1 is equivalent to implicit OR
 			// This deviates from previous OJS practice, please see
 			// http://pkp.sfu.ca/wiki/index.php/OJSdeSearchConcept#Query_Parser
@@ -1755,11 +1746,6 @@ class SolrWebService extends XmlWebService {
 	 *  went wrong.
 	 */
 	function _getSearchQueryParameters(&$searchRequest) {
-
-		// TODO
-		$debugFile = fopen("debug.txt", "a");
-		fwrite($debugFile, "_getSearchQueryParameters.". print_r($searchRequest->getQuery(), TRUE));
-
 		// Pre-filter and translate query phrases.
 		$subQueries = array();
 		foreach($searchRequest->getQuery() as $fieldList => $searchPhrase) {
@@ -1767,7 +1753,8 @@ class SolrWebService extends XmlWebService {
 			if (empty($fieldList) || empty($searchPhrase)) continue;
 
 			// Translate query keywords.
-			$subQueries[$fieldList] = $this->_translateSearchPhrase($searchPhrase);
+		//	$subQueries[$fieldList] = $this->_translateSearchPhrase($searchPhrase);
+			$subQueries[$fieldList] = $searchPhrase;
 		}
 
 		// We differentiate between simple and multi-phrase queries.
@@ -1811,7 +1798,7 @@ class SolrWebService extends XmlWebService {
 		// Add the journal as a filter query (if set).
 		$journal = $searchRequest->getJournal();
 		if (is_a($journal, 'Journal')) {
-			$params['fq'][] = 'journal_id:"' . $this->_instId . '-' . $journal->getId() . '"';
+		//	$params['fq'][] = 'journal_id:"' . $this->_instId . '-' . $journal->getId() . '"';
 		}
 
 		// Add excluded IDs as a filter query (if set).

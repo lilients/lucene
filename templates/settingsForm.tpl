@@ -31,6 +31,13 @@
 
 	{/fbvFormArea}
 
+	{fbvFormArea id="solrSettingsFormArea" title="plugins.generic.solr.settings.searchFeatures"}
+		{fbvFormSection for="searchFeatures" list=true description="plugins.generic.solr.settings.searchFeatures.description"}
+			{fbvElement type="checkbox" id="autosuggest" value="1" checked=$autosuggest label="plugins.generic.solr.settings.autosuggest"}
+			{fbvElement type="checkbox" id="highlighting" value="1" checked=$highlighting label="plugins.generic.solr.settings.highlighting"}
+		{/fbvFormSection}
+	{/fbvFormArea}
+
 	{fbvFormButtons}
 </form>
 

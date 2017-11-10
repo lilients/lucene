@@ -242,14 +242,14 @@ class LucenePlugin extends GenericPlugin {
 					$form->initData();
 
 					// Index rebuild.
-			/*		if ($request->getUserVar('rebuildIndex')) {
+					if ($request->getUserVar('rebuildIndex')) {
 						// Check whether we got valid index rebuild options.
 						if ($form->validate()) {
 							// Check whether a journal was selected.
 							$journal = null;
 							$journalId = $request->getUserVar('journalToReindex');
 							if (!empty($journalId)) {
-								$journalDao = DAORegistry::getDAO('JournalDAO'); /* @var $journalDao JournalDAO 
+								$journalDao = DAORegistry::getDAO('JournalDAO'); /* @var $journalDao JournalDAO */
 								$journal = $journalDao->getById($journalId);
 								if (!is_a($journal, 'Journal')) $journal = null;
 							}
@@ -285,7 +285,7 @@ class LucenePlugin extends GenericPlugin {
 						$embeddedServer->stopAndWait();
 					} elseif ($request->getUserVar('startServer')) {
 						$embeddedServer->start();
-					}*/
+					}
 
 				}
 				return new JSONMessage(true, $form->fetch($request));
@@ -404,33 +404,31 @@ class LucenePlugin extends GenericPlugin {
 		list($journal, $keywords, $fromDate, $toDate, $orderBy, $orderDir, $exclude, $page, $itemsPerPage) = $params;
 		$totalResults =& $params[9]; // need to use reference
 		$error =& $params[10]; // need to use reference
-
-		$debugFile = fopen("debug.txt", "a");
-	//	fwrite($debugFile, print_r($params, TRUE));
+		$results =& $params[11]; // need to use reference
 
 		// Instantiate a search request.
 		$searchRequest = new SolrSearchRequest();
 		$searchRequest->setJournal($journal);
-	//	$searchRequest->setFromDate($fromDate);
-	//	$searchRequest->setToDate($toDate);
-	//	$searchRequest->setOrderBy($orderBy);
-	//	$searchRequest->setOrderDir($orderDir == 'asc' ? true : false);
-	//	$searchRequest->setPage($page);
-	//	$searchRequest->setItemsPerPage($itemsPerPage);
+		$searchRequest->setFromDate($fromDate);
+		$searchRequest->setToDate($toDate);
+		$searchRequest->setOrderBy($orderBy);
+		$searchRequest->setOrderDir($orderDir == 'asc' ? true : false);
+		$searchRequest->setPage($page);
+		$searchRequest->setItemsPerPage($itemsPerPage);
 		$searchRequest->addQueryFromKeywords($keywords);
-	//	$searchRequest->setExcludedIds($exclude);
+		$searchRequest->setExcludedIds($exclude);
 
 		// Configure alternative spelling suggestions.
-	/*	$spellcheck = (boolean)$this->getSetting(0, 'spellcheck');
+		$spellcheck = (boolean)$this->getSetting(0, 'spellcheck');
 		$searchRequest->setSpellcheck($spellcheck);
-	*/
+
 		// Configure highlighting.
-	/*	$highlighting = (boolean)$this->getSetting(0, 'highlighting');
+		$highlighting = (boolean)$this->getSetting(0, 'highlighting');
 		$searchRequest->setHighlighting($highlighting);
-	*/
+	/*
 		// Configure faceting.
 		// 1) Faceting will be disabled for filtered search categories.
-	/*	$activeFilters = array_keys($searchRequest->getQuery());
+		$activeFilters = array_keys($searchRequest->getQuery());
 		if (is_a($journal, 'Journal')) $activeFilters[] = 'journalTitle';
 		if (!empty($fromDate) || !empty($toDate)) $activeFilters[] = 'publicationDate';
 		// 2) Switch faceting on for enabled categories that have no
@@ -471,9 +469,6 @@ class LucenePlugin extends GenericPlugin {
 		// Call the solr web service.
 		$solrWebService =& $this->getSolrWebService();
 		$result = $solrWebService->retrieveResults($searchRequest, $totalResults);
-
-	//	$debugFile = fopen("debug.txt", "a");
-	//	fwrite($debugFile, print_r($result, TRUE));
 
 		if (is_null($result)) {
 			$error = $solrWebService->getServiceMessage();
@@ -519,7 +514,10 @@ class LucenePlugin extends GenericPlugin {
 
 			// Return the scored results.
 			if (isset($result['scoredResults']) && !empty($result['scoredResults'])) {
-				return $result['scoredResults'];
+				$debugFile = fopen("debug.txt", "a");
+				fwrite($debugFile, " LucenePlugin:scoredResults: ".print_r($result['scoredResults'], TRUE));
+				$results = $result['scoredResults'];
+				return true;
 			} else {
 				return array();
 			}
